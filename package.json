@@ -1,0 +1,25 @@
+{
+  "name": "website2.0",
+  "description": "Blog using Gatsby2.0",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "react-devtools": "react-devtools"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.0",
+    "gatsby-image": "^2.0.10",
+    "gatsby-plugin-page-creator": "^2.0.0",
+    "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-source-filesystem": "^2.0.1",
+    "gatsby-transformer-remark": "^2.1.4",
+    "gatsby-transformer-sharp": "^2.1.2",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1"
+  },
+  "devDependencies": {
+    "react-devtools": "^3.4.0"
+  }
+}

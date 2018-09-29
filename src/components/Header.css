@@ -1,0 +1,21 @@
+.navbar {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 8px;
+    width: 100%;
+    background-color: #000;
+    border-bottom: 2px solid #BBB
+}
+
+.navbar a {
+    display: inline-flex;
+    justify-content: left;
+    color: #fff;
+}
+
+.navbar h1 {
+    display: inline-flex;
+    margin-left: 1rem;
+    color: #f8f8ff
+}
+

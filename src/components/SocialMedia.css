@@ -1,0 +1,22 @@
+SocialMedia{
+    display: inline-block;
+}
+
+.SocialMedia ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    
+}
+
+.SocialMedia li {
+    display: inline-flex;
+    list-style: none;
+    
+}
+
+.SocialMedia i {
+    color: #000;
+    margin: 0.5rem;
+}
