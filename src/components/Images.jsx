@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-const ImageGallery = ({ data }) => {
+const Images = ({ data }) => {
   return (
     <div className="GalleryContainer">
       <h1>Image Gallery</h1>
@@ -28,7 +28,7 @@ const ImageGallery = ({ data }) => {
   );
 };
 
-export default ImageGallery;
+export default Images;
 
 export const GalleryQuery = graphql`
   query ImageGallery {
