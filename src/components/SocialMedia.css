@@ -1,22 +1,26 @@
 SocialMedia{
-    display: inline-block;
+    display: inline-flex;
+}
+.SocialMedia p{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .SocialMedia ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0.5rem;
-    
 }
 
 .SocialMedia li {
     display: inline-flex;
     list-style: none;
-    
 }
 
 .SocialMedia i {
     color: #fff;
-    margin: 0.5rem;
+    padding: .5rem;
 }

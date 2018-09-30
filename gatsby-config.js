@@ -2,17 +2,25 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-    title: "Dave's Woodworking",
+    title: `Dave's Woodworking`,
+    url: `https://github.com/prp1277/daveswoodworking`,
   },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-typography`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography.js`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/`,
+        path: `${__dirname}/src/`,
       },
     },
     {

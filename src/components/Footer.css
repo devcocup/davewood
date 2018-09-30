@@ -2,10 +2,7 @@
     display: block;
     padding: 8px;
     width: 100%;
-    background-color: #000;
+    background: url('http://i.stack.imgur.com/jGlzr.png') no-repeat 0 0 scroll;
+    background-color:#0C0C0C;
     border-top: 2px solid #BBB
-}
-SocialMedia{
-    display: inline-flex;
-    justify-content: center;
 }

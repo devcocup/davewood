@@ -5,6 +5,7 @@ class SocialMedia extends React.Component {
   render() {
     return (
       <div className="SocialMedia">
+        <p>Follow David on Facebook and Instagram</p>
         <ul>
           <li>
             <FbIcon />
