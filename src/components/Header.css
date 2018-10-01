@@ -1,5 +1,5 @@
 .navbar {
-    display: block;
+    display: inline-block;
     padding: 8px;
     width: 100%;
     background: url('http://i.stack.imgur.com/jGlzr.png') no-repeat 0 0 scroll;

@@ -18,7 +18,7 @@
 }
 
 .SubHeading a{
-    display: inline-block;
+    display: inline-flex;
     text-decoration: none;
     text-align: center;
     padding: 8px 12px;
