@@ -22,7 +22,8 @@
     "react-typography": "^0.16.13",
     "typography": "^0.16.17",
     "typography-theme-bootstrap": "^0.16.7",
-    "typography-theme-irving": "^0.15.10"
+    "typography-theme-irving": "^0.15.10",
+    "typography-theme-judah": "^0.15.10"
   },
   "devDependencies": {
     "react-devtools": "^3.4.0"
