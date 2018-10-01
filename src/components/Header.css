@@ -1,6 +1,5 @@
 .navbar {
     display: block;
-    margin-bottom: 1rem;
     padding: 8px;
     width: 100%;
     background: url('http://i.stack.imgur.com/jGlzr.png') no-repeat 0 0 scroll;
@@ -8,15 +7,15 @@
     border-bottom: 2px solid #BBB
 }
 
-.navbar a {
-    display: inline-flex;
-    justify-content: left;
-    color: #fff;
-}
-
 .navbar h1 {
     display: inline-flex;
     margin-left: 1rem;
-    color: #f8f8ff
+    color: #f8f8ff;
+    justify-content: left;
 }
-
+.navbar a {
+    display: inline-flex;
+    float: right;
+    color: #fff;
+    margin-right: 2rem;
+}

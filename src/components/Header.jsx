@@ -5,8 +5,8 @@ class Header extends Component {
   render() {
     return (
       <div className="navbar">
-        <HomeButton />
         <SiteTitle />
+        <HomeButton />
       </div>
     );
   }

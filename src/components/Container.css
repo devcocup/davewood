@@ -3,13 +3,14 @@
     max-height: 100%;
     margin: 0;
     padding: 0;
-    overflow: scroll;
+    overflow: scroll;  
   }
+  
   .Container {
     margin: 2rem auto;
     max-width: 750px;
     overflow: hidden;
-    padding: 8px;
+    padding: 10px;   
   }
 
   h3{

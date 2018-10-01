@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Container from "../components/Container";
+import SubHeading from "../components/SubHeader";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -10,6 +11,7 @@ export default ({ data }) => {
     <div className="MdCompiler">
       <FA />
       <Header />
+      <SubHeading />
       <Container>
         <div className="Main" dangerouslySetInnerHTML={{ __html: post.html }} />
       </Container>

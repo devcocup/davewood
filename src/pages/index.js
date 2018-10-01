@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Container from "../components/Container";
+import SubHeading from "../components/SubHeader";
 
 class App extends React.Component {
   render() {
@@ -9,42 +10,14 @@ class App extends React.Component {
       <div className="App">
         <FA />
         <Header />
+        <SubHeading />
         <Container>
           <div className="Main">
             <h1>Welcome!</h1>
             <p>
               This site is a showcase of David Miles' Woodworking. Follow the
-              links below to see a few of David's projects.
+              links above to see a few of David's projects.
             </p>
-          </div>
-          <div className="PageLinks">
-            <h3>
-              <a href={"./md/Bar"}> Bar </a>
-            </h3>
-
-            <h3>
-              <a href={"./md/Basement"}> Basement Renovations </a>
-            </h3>
-
-            <h3>
-              <a href={"./md/BosleyStorage"}> Bosley's Storage </a>
-            </h3>
-
-            <h3>
-              <a href={"./md/CoffeeTables"}> Coffee Tables </a>
-            </h3>
-
-            <h3>
-              <a href={"./md/Storage"}> Storage </a>
-            </h3>
-
-            <h3>
-              <a href={"./md/BeverageStuff"}> Beverage Stuff </a>
-            </h3>
-
-            <h3>
-              <a href={"./md/ShelvesAndHangers"}> Shelves and Wall Decor </a>
-            </h3>
           </div>
         </Container>
         <Footer />
