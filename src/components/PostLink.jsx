@@ -3,8 +3,8 @@ import { Link } from "gatsby";
 
 const PostLink = ({ post }) => (
   <div>
-    <Link to={post.frontmatter.path}>
-      {post.frontmatter.title} ({post.frontmatter.date})
+    <Link to={post.slug}>
+      <b>{post.frontmatter.title}</b> - {post.frontmatter.date}
     </Link>
   </div>
 );
