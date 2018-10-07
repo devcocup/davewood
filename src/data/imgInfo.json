@@ -5,24 +5,6 @@
         {
           "node": {
             "original": {
-              "src": "/static/ProfilePic-b0bf2b2282c2f9b31f8d78d8fc3e3e1b.jpg",
-              "width": 749,
-              "height": 750
-            },
-            "fluid": {
-              "originalName": "ProfilePic.jpg",
-              "presentationWidth": 749,
-              "presentationHeight": 750
-            },
-            "fixed": {
-              "width": 400,
-              "height": 401
-            }
-          }
-        },
-        {
-          "node": {
-            "original": {
               "src": "/static/BarBack-28e0b42d0b28b45930c894f4f462ba72.jpg",
               "width": 906,
               "height": 960
@@ -791,6 +773,24 @@
             "fixed": {
               "width": 400,
               "height": 400
+            }
+          }
+        },
+        {
+          "node": {
+            "original": {
+              "src": "/static/ProfilePic-47f10aebd6e5bd6ce894054e4069fe13.jpg",
+              "width": 375,
+              "height": 375
+            },
+            "fluid": {
+              "originalName": "ProfilePic.jpg",
+              "presentationWidth": 375,
+              "presentationHeight": 375
+            },
+            "fixed": {
+              "width": 375,
+              "height": 375
             }
           }
         }

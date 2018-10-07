@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Link } from "gatsby";
+//import { Link } from "gatsby";
 import "./SubHeader.css";
+import SiteData from "./SiteData";
 
 class SubHeading extends Component {
   render() {
@@ -16,7 +17,8 @@ export default SubHeading;
 
 const SubHeader = () => (
   <div className="ProjectList">
-    <ul>
+    <SiteData />
+    {/* <ul>
       <li>
         <Link to="./md/Bar"> -Bar </Link>
       </li>
@@ -41,6 +43,6 @@ const SubHeader = () => (
       <li>
         <Link to="./md/About"> -About This Site </Link>
       </li>
-    </ul>
+    </ul> */}
   </div>
 );

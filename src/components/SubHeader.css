@@ -28,3 +28,7 @@
 .SubHeading a:hover{
     background-color: #cc0000
 }
+
+.SiteData {
+    display: flex;
+}

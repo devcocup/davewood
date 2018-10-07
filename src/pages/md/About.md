@@ -5,48 +5,12 @@ date: "2018-10-01"
 
 # About This Site
 
-## Meet David Miles
+### David is an electrician, woodworker and recently became my brother-in-law.
 
-### Markdown Syntax
+<center><img src="/static/ProfilePic-47f10aebd6e5bd6ce894054e4069fe13.jpg" alt="" width="375"></center>
 
-/src/img/ProfilePic.jpg
-[![Profile]("alt")](/src/img/ProfilePic.jpg)
+<center>Here is is pictured with his wife, Alex, on their wedding day.</center><br/>
 
-src/img/ProfilePic.jpg
-![Profile](src/img/ProfilePic.jpg)
+David is originally from Fremont, but moved to Omaha to pursue a career as an electrician for Omaha Electric. When he's not working or at a Powell family event, there's a good chance that you'll find him in his [basement](/md/Basement) working on a new project.
 
-./src/img/ProfilePic.jpg
-![Profile](./src/img/ProfilePic.jpg)
-
-### Using the img tag
-
-src="/src/img/ProfilePic.jpg"
-<img src="/src/img/ProfilePic.jpg">
-
-src={/src/img/ProfilePic.jpg}
-<img src={/src/img/ProfilePic.jpg}>
-
-src={./src/img/ProfilePic.jpg}
-<img src={./src/img/ProfilePic.jpg}>
-
-## Public URL
-
-> /static/ProfilePic-b0bf2b2282c2f9b31f8d78d8fc3e3e1b.jpg
-
-### Markdown
-
-![Profile](/static/ProfilePic-b0bf2b2282c2f9b31f8d78d8fc3e3e1b.jpg)
-
-[![Profile](/static/ProfilePic-b0bf2b2282c2f9b31f8d78d8fc3e3e1b.jpg)](/static/ProfilePic-b0bf2b2282c2f9b31f8d78d8fc3e3e1b.jpg)
-
-### img <{ }>
-
-Brackets
-<img src={/static/ProfilePic-b0bf2b2282c2f9b31f8d78d8fc3e3e1b.jpg} alt="Profile">
-
-Quotes
-
-<center><img src="/static/ProfilePic-b0bf2b2282c2f9b31f8d78d8fc3e3e1b.jpg" alt="Profile"></center>
-
-Double Brackets
-<img src={{/static/ProfilePic-b0bf2b2282c2f9b31f8d78d8fc3e3e1b.jpg}} alt="Profile">
+This site will be updated with new projects as he completes them and a page for submitting requests will be added soon!
