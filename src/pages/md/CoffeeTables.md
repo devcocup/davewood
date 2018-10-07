@@ -7,28 +7,28 @@ date: "2018-09-29"
 
 ## Nebraska Themed
 
-<center><img src="./../../img/CoffeeTables/BigNTable.jpg"  alt="BigN" width="400" height="400" /></center>
+![Big N Table](/static/BigNTable-2c5b9e17ce0c29797f2d5b64ce1158f4.jpg)
 
-<center><img src="./../../img/CoffeeTables/CoffeeTable-N.jpg"  alt="CoffeeTableN" width="400" height="300" /></center>
+![N Table](/static/CoffeeTable-N-52156da090140d040d38570b873d4117.jpg)
 
 ## David's Own Coffee Table
 
-<center><img src="./../../img/CoffeeTables/CoffeeTable.jpg"  alt="OwnTable" width="400" height="292" /></center>
+![David's Coffee Table](/static/CoffeeTable-4422fea698a20070810ef4d0c9c3ae35.jpg)
 
-<center><img src="./../../img/CoffeeTables/CoffeeTableCloseUp.jpg"  alt="Close-Up" width="400" height="409" /></center>
+![Coffee Table Close-up](/static/CoffeeTableCloseUp-ac9f5b146d44798f726bbd7b15b71f12.jpg)
 
 ## A Table Built for a Friend
 
-<center><img src="./../../img/CoffeeTables/CoffeeTable-2Full.jpg"  alt="Table2-Full" width="400" height="197" /></center>
+![Table2](/static/CoffeeTable-2-c215e6f0ee88c6207cd2f9d916d5beb3.jpg)
 
-<center><img src="./../../img/CoffeeTables/CoffeeTableProfile.jpg"  alt="Table-Profile" width="400" height="262" /></center>
+![Coffee Table Profile](/static/CoffeeTableProfile-bf1b039123db2e66d84b82c36608d9a8.jpg)
 
-<center><img src="./../../img/CoffeeTables/CoffeeTable-2.jpg"  alt="Table-2" width="400" height="313" /></center>
+![Table2 Full](/static/CoffeeTable-2Full-bbf017db6c807ee96d0b42c07715fa2f.jpg)
 
-<center><img src="./../../img/CoffeeTables/CoffeeTable-2Top.jpg"  alt="Top-2" width="400" height="468" /></center>
+![Coffee Table2 Top](/static/CoffeeTable-2Top-366a69785399fae8bfa5b56386bb3e86.jpg)
 
-<center><img src="./../../img/CoffeeTables/QualityStain.jpg"  alt="Stain" width="400" height="290" /></center>
+![Quality Stain](/static/QualityStain-819781718692c1d070b21e0419332e8a.jpg)
 
 ## Coffee Table With Tile Top
 
-<center><img src="./../../img/CoffeeTables/CoffeeTable-Tile.jpg"  alt="Tile" width="400" height="300" /></center>
+![Tile Top](/static/CoffeeTable-Tile-3eaddfd1846593b9603fecbf51d9f82e.jpg)

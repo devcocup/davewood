@@ -20,7 +20,7 @@ export default ({ data }) => {
         <tbody className="Image-Details">
           {data.allImageSharp.edges.map(({ node }, index) => (
             <tr key={index}>
-              <td>.{node.original.src}</td>
+              <td>{node.original.src}</td>
               <td>
                 {node.fluid.presentationWidth}
                 px | {node.fluid.presentationHeight}
