@@ -13,7 +13,7 @@ export default ({ data }) => {
       <Header />
       <SubHeading />
       <Container>
-        <div className="Main" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="Md" dangerouslySetInnerHTML={{ __html: post.html }} />
       </Container>
       <Footer />
     </div>
