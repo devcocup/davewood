@@ -1,6 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
 
+/**
+ * Statefull Functional Component
+ */
 export default ({ data }) => {
   console.log(data);
   return (

@@ -1,4 +1,6 @@
 import React from "react";
-import "./Container.css";
 
+/**
+ * Statefull - children as props
+ */
 export default ({ children }) => <div className="Container">{children}</div>;

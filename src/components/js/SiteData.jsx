@@ -1,6 +1,10 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 
+/**
+ * Statefull functional component
+ * <StaticQuery =`{}`
+ */
 const SiteData = () => (
   <StaticQuery
     query={graphql`
@@ -30,7 +34,7 @@ const SiteData = () => (
       <div className="SiteData">
         {data.allMarkdownRemark.edges.map(({ node }, index) => (
           <ul key={index}>
-            <li style={{ listStyle: `none` }}>
+            <li style={{ listStyle: `none`, textAlign: `center` }}>
               <a href={node.fields.slug}>{node.frontmatter.title}</a>
             </li>
           </ul>

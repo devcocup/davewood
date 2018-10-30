@@ -1,4 +1,4 @@
-.SubHeading {
+/* .SubHeading {
     width: 100%;
     display: block;
     top: 0px;
@@ -31,4 +31,5 @@
 
 .SiteData {
     display: flex;
-}
+    text-align: center;
+} */

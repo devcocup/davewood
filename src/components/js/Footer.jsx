@@ -1,7 +1,11 @@
 import React, { Component } from "react";
-import "./Footer.css";
+
 import SocialMedia from "./SocialMedia";
 
+/**
+ * Stateless Class-Component
+ * <Footer><SocialMedia />
+ */
 class Footer extends Component {
   render() {
     return (
