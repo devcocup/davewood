@@ -1,33 +1,23 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Container from "../components/Container";
-import SubHeading from "../components/SubHeader";
+import Header from "../components/js/Header";
+import Footer from "../components/js/Footer";
+import Container from "../components/js/Container";
+import SubHeading from "../components/js/SubHeader";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
     <div className="MdCompiler">
-      <FA />
       <Header />
       <SubHeading />
       <Container>
-        <div className="Md" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="InnerHtml" dangerouslySetInnerHTML={{ __html: post.html }} />
       </Container>
       <Footer />
     </div>
   );
 };
-
-const FA = () => (
-  <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossOrigin="anonymous"
-  />
-);
 
 export const query = graphql`
   query($slug: String!) {

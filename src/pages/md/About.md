@@ -9,7 +9,7 @@ date: "2018-10-01"
 
 <center><img src="/static/ProfilePic-47f10aebd6e5bd6ce894054e4069fe13.jpg" alt="" width="375"></center>
 
-<center>Here is is pictured with his wife, Alex, on their wedding day.</center><br/>
+<center>Here he is pictured with his wife, Alex, on their wedding day.</center><br/>
 
 David is originally from Fremont, but moved to Omaha to pursue a career as an electrician for Omaha Electric. When he's not working or at a Powell family event, there's a good chance that you'll find him in his [basement](/md/Basement) working on a new project.
 

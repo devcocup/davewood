@@ -22,19 +22,13 @@ export default ({ data }) => {
             <tr key={index}>
               <td>{node.original.src}</td>
               <td>
-                {node.fluid.presentationWidth}
-                px | {node.fluid.presentationHeight}
-                px
+                {node.fluid.presentationWidth} px | {node.fluid.presentationHeight} px
               </td>
               <td>
-                {node.original.width}
-                px | {node.original.height}
-                px
+                {node.original.width} px | {node.original.height} px
               </td>
               <td>
-                {node.fixed.width}
-                px | {node.fixed.height}
-                px
+                {node.fixed.width} px | {node.fixed.height} px
               </td>
             </tr>
           ))}
