@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 export default ({ data }) => {
   console.log(data);
   return (
-    <div className="My-Files-Content" style={{ margin: `3rem` }}>
+    <div className="My-Image-Content" style={{ margin: `3rem` }}>
       <h1 className="Page-Title">Image Reference</h1>
       <p>Note: Sizes are in W | H format</p>
 

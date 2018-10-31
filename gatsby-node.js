@@ -17,7 +17,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
   return new Promise((resolve, reject) => {
-    //this is where I'm screwing up axios requests
     graphql(`
       {
         allMarkdownRemark {
@@ -31,17 +30,17 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `).then((result) => {
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        createPage({
-          path: node.fields.slug,
-          component: path.resolve(`./src/templates/mdCompiler.js`),
-          context: {
-            slug: node.fields.slug,
-          },
+        result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+          createPage({
+            path: node.fields.slug,
+            component: path.resolve(`./src/templates/mdCompiler.js`),
+            context: {
+              slug: node.fields.slug,
+            },
+          });
         });
+        resolve();
       });
-      resolve();
-    });
   });
 };
 
