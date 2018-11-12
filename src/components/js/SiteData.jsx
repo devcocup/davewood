@@ -31,14 +31,14 @@ const SiteData = () => (
       }
     `}
     render={(data) => (
-      <div className="SiteData">
-        {data.allMarkdownRemark.edges.map(({ node }, index) => (
-          <ul key={index}>
-            <li style={{ listStyle: `none`, textAlign: `center` }}>
-              <a href={node.fields.slug}>{node.frontmatter.title}</a>
-            </li>
-          </ul>
-        ))}
+      <div className="container-fluid-justified">
+        <div className="btn-group btn-group">
+          {data.allMarkdownRemark.edges.map(({ node }, index) => (
+            <button className="btn btn-group" key={index}>
+              <a className="btn btn-primary" href={node.fields.slug}>{node.frontmatter.title}</a>
+            </button>
+          ))}
+        </div>
       </div>
     )}
   />

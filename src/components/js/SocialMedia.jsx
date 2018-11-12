@@ -17,12 +17,12 @@ class SocialMedia extends React.Component {
 
 const FbIcon = () => (
   <a href="https://www.facebook.com/Daves-Woodworking-1577530669229362/">
-    <img className="img-responsive" src="./static/facebook-square-brands.svg" alt="" width="48px" />
+    <img className="img-responsive" src="/static/facebook-square-brands.svg" alt="" width="48px" />
   </a>
 );
 const InstaIcon = () => (
   <a href="https://www.instagram.com/dtmiles1591/">
-    <img className="img-responsive" src="./static/instagram-brands.svg" alt="" width="48px" />
+    <img className="img-responsive" src="/static/instagram-brands.svg" alt="" width="48px" />
   </a>
 );
 

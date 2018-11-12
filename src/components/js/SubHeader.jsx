@@ -6,20 +6,15 @@ import SiteData from "./SiteData";
  * Statefull Class Component
  * <div.SubHeading><SubHeader />
  */
-class SubHeading extends Component {
+class SubHeader extends Component {
   render() {
     return (
-      <div className="SubHeading">
-        <SubHeader />
+      <div className="SubHeader">
+        <SiteData />
       </div>
     );
   }
 }
 
-export default SubHeading;
+export default SubHeader;
 
-const SubHeader = () => (
-  <div className="ProjectList">
-    <SiteData />
-  </div>
-);
