@@ -1,67 +1,63 @@
-#Root {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0;
-    padding: 0;
+/* Container {
+  display: inline-block;
+  background-color: #e6e7e7;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 3rem;
+  padding: 8px;
+  border: 1px solid #BBB;
 }
 
-#Root .Container {
-    display: inline-block;
-    background-color: #e6e7e7;
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0;
-    padding: 0;
-    border: 1px solid #BBB;
-}
-
-.navbar {
-    display: inline-block;
-    padding: 8px;
-    width: 100%;
-    background: url('http://i.stack.imgur.com/jGlzr.png') no-repeat 0 0 scroll;
-    border: 1px solid #BBB;
-}
-
-.ProjectList {
-    width: 100%;
-    display: inline-flex;
-    background-color: #fff;
-    border: 1px solid #BBB;
-}
-
-.ProjectList li {
-    display: inline-flex;
-    font-style: italic;
-    color: #000;
-}
-
-.InnerHtml {
-    text-align: center;
-    margin: 3rem;
-    max-width: 85%;
-    max-height: 100%;
-    display: inline-block;
-}
-
-.InnerHtml img {
-    max-width: 600px;
-    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
-}
-
-.InnerHtml img:hover {
-    box-shadow: 0 2px 4px 0 #cc0000, 0 3px 10px 0 #cc0000;
+li {
+  list-style: none;
+  display: flex;
+  overflow: hidden;
 }
 
 a:hover {
-    color: #cc0000;
+  color: #cc0000;
+}
+
+img {
+  max-width: 600px;
+  box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+
+.body {
+  text-align: center;
+  background-color: #e6e6e6;
+  border: 1px solid #BBB;
+}
+
+.navbar {
+  display: block;
+  padding: 8px;
+  background: url('http://i.stack.imgur.com/jGlzr.png') no-repeat 0 0 scroll;
+  border: 1px solid #BBB;
+}
+
+.navbar-header {
+  color: #fff;
+}
+
+.SiteData {
+  background-color: #fff;
+  border: 1px solid #BBB;
+  padding: 8px;
+  display: inline-flex;
+  overflow: hidden;
 }
 
 .Footer {
-    display: inline-block;
-    text-align: center;
-    padding: 8px;
-    width: 100%;
-    background: url('http://i.stack.imgur.com/jGlzr.png') no-repeat 0 0 scroll;
-    border-top: 2px solid #BBB;
+  display: block;
+  text-align: center;
+  padding: 8px;
+  width: 100%;
+  background: url('http://i.stack.imgur.com/jGlzr.png') no-repeat 0 0 scroll;
+  border-top: 2px solid #BBB;
 }
+
+.Footer h4 {
+  color: #fff;
+}
+ */
