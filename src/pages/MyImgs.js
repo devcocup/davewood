@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Footer from "../components/js/Footer";
-import Navbar from "../components/js/Navbar";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 export default ({ data }) => {
   console.log(data);

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import SiteData from "./SiteData";
+import PageLinks from "./PageLinks";
 
 /**
  * Statefull Class Component
@@ -9,8 +9,8 @@ import SiteData from "./SiteData";
 class SubHeader extends Component {
   render() {
     return (
-      <div className="SubHeader">
-        <SiteData />
+      <div className="SubHeader container-fluid">
+        <PageLinks />
       </div>
     );
   }

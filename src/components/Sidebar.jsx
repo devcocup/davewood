@@ -21,48 +21,48 @@ class Sidebar extends React.Component {
 
         <section className="btn-group-vertical justify-content-around">
 
-          <a className="btn-danger btn-lg my-1"
+          <a className="btn-danger btn-lg btn-block my-1"
             id="Home" href="/">
             Home
             </a>
 
-          <a className="btn-danger btn-lg my-1"
-            id="About" href="/lg/About/" >
+          <a className="btn-danger btn-lg btn-block my-1"
+            id="About" href="/md/About/" >
             About
             </a>
 
-          <a className="btn-danger btn-lg my-1"
-            id="Bar" href="/lg/Bar">
+          <a className="btn-danger btn-lg btn-block my-1"
+            id="Bar" href="/md/Bar">
             Bar
             </a>
 
-          <a className="btn-danger btn-lg my-1"
-            id="Basement" href="/lg/Basement/">
+          <a className="btn-danger btn-lg btn-block my-1"
+            id="Basement" href="/md/Basement/">
             Basement Wall
             </a>
 
-          <a className="btn-danger btn-lg my-1"
-            id="BosleyStorage" href="/lg/BosleyStorage">
+          <a className="btn-danger btn-lg btn-block my-1"
+            id="BosleyStorage" href="/md/BosleyStorage">
             Bosley Storage
             </a>
 
-          <a className="btn-danger btn-lg my-1"
-            id="Beverage" href="/lg/BeverageStuff">
+          <a className="btn-danger btn-lg btn-block my-1"
+            id="Beverage" href="/md/BeverageStuff">
             Beer and Wine
               </a>
 
-          <a className="btn-danger btn-lg my-1"
-            id="CoffeeTables" href="/lg/CoffeeTables/">
+          <a className="btn-danger btn-lg btn-block my-1"
+            id="CoffeeTables" href="/md/CoffeeTables/">
             Coffee Tables
               </a>
 
-          <a className="btn-danger btn-lg my-1"
+          <a className="btn-danger btn-lg btn-block my-1"
             href="/MyImgs/">
             Image Reference
               </a>
 
-          <a className="btn-danger btn-lg my-1"
-            href="/lg/Storage/">
+          <a className="btn-danger btn-lg btn-block my-1"
+            href="/md/Storage/">
             Storage
               </a>
 
@@ -73,6 +73,3 @@ class Sidebar extends React.Component {
 
 }
 export default Sidebar;
-{/*         <button className="btn btn-success" onClick={this.toggleSidebar}>Toggle
-        <Collapse isOpen={!this.state.collapsed} />
-        </button> */}

@@ -1,10 +1,10 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import Navbar from "../components/js/Navbar";
-import Footer from "../components/js/Footer";
-import Sidebar from "../components/js/Sidebar";
-import { CardGroup } from "../components/js/Card";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Sidebar from "../components/Sidebar";
+import { Card, CardGroup } from "../components/Card";
 
 class App extends React.Component {
   render() {
@@ -21,8 +21,9 @@ class App extends React.Component {
             <section className="main container-fluid" id="main">
               <CardGroup />
             </section>
-
+            <Card />
           </div>
+
         </div>
         <Footer />
       </div>

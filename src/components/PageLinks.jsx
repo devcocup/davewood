@@ -31,8 +31,8 @@ const PageLinks = () => (
       }
     `}
     render={(data) => (
-      <div className="container">
-        <div className="btn-group flex-column btn-group justify-content-center">
+      <div className="align-text-center flex-row">
+        <div className="btn-group flex-column btn-group">
           {data.allMarkdownRemark.edges.map(({ node }, index) => (
             <button className="btn btn-group" key={index}>
               <a className="btn btn-primary text-center" href={node.fields.slug}>{node.frontmatter.title}</a>

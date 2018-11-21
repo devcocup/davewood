@@ -1,9 +1,9 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { graphql } from "gatsby";
-import Navbar from "../components/js/Navbar";
-import Footer from "../components/js/Footer";
-import Sidebar from "../components/js/Sidebar";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Sidebar from "../components/Sidebar";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -11,8 +11,9 @@ export default ({ data }) => {
     <div id="App">
       <Navbar />
       <Sidebar />
+
       <div className="row">
-        <div className="main" id="main" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="main mx-auto" id="main" dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
       <Footer />
     </div>

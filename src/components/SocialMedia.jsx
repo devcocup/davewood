@@ -15,28 +15,11 @@ class SocialMedia extends React.Component {
             <p>Questions? Comments?</p>
           </section>
 
-          <section className="media-icons">
-            <icon className="fab fa-font-awesome fa-3x" />
-            <FbIcon />
-            <InstaIcon />
-          </section>
-
         </section>
       </div>
     );
   }
 }
-
-const FbIcon = () => (
-  <a href="https://www.facebook.com/Daves-Woodworking-1577530669229362/">
-    <icon className="img-fluid" src="/static/facebook-square-brands.svg" alt="" width="48px" />
-  </a>
-);
-const InstaIcon = () => (
-  <a href="https://www.instagram.com/dtmiles1591/">
-    <icon className="fab fa-instagram" src="/static/instagram-brands.svg" alt="" width="48px" />
-  </a>
-);
 
 export default SocialMedia;
 
