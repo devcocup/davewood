@@ -19,14 +19,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-typography`,
     `gatsby-plugin-netlify`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography.js`,
-      },
-    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -37,20 +30,20 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/src`,
+        path: `${ __dirname }/src`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `img`,
-        path: `${__dirname}/src/img`,
+        name: `images`,
+        path: path.join(__dirname, `src`, `img`),
       },
     },
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
-        path: `${__dirname}/src/pages`,
+        path: `${ __dirname }/src/pages`,
       },
     },
     {

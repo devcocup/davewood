@@ -9,13 +9,13 @@
     "react-devtools": "react-devtools"
   },
   "dependencies": {
+    "bootstrap": "^4.1.3",
     "gatsby": "^2.0.0",
     "gatsby-image": "^2.0.10",
     "gatsby-plugin-netlify": "^2.0.1",
     "gatsby-plugin-page-creator": "^2.0.0",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.5",
-    "gatsby-plugin-typography": "^2.2.0",
     "gatsby-remark-copy-linked-files": "^2.0.5",
     "gatsby-source-filesystem": "^2.0.1",
     "gatsby-transformer-remark": "^2.1.4",
@@ -23,11 +23,7 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
-    "react-typography": "^0.16.13",
-    "typography": "^0.16.17",
-    "typography-theme-bootstrap": "^0.16.7",
-    "typography-theme-irving": "^0.15.10",
-    "typography-theme-judah": "^0.15.10"
+    "reactstrap": "^6.5.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
