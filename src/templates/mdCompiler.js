@@ -1,19 +1,19 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { graphql } from "gatsby";
 import Navbar from "../components/js/Navbar";
 import Footer from "../components/js/Footer";
-import Container from "../components/js/Container";
-import SubHeading from "../components/js/SubHeader";
+import Sidebar from "../components/js/Sidebar";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <div className="container-fluid shadow-lg p-4 mb-4 bg-white">
+    <div id="App">
       <Navbar />
-      <SubHeading />
-      <Container className="container shadow-lg p-4 mb-4 bg-white">
-        <div style={{ margin: `3rem`, textAlign: `center` }} dangerouslySetInnerHTML={{ __html: post.html }} />
-      </Container>
+      <Sidebar />
+      <div className="row">
+        <div className="main" id="main" dangerouslySetInnerHTML={{ __html: post.html }} />
+      </div>
       <Footer />
     </div>
   );

@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from "gatsby";
  * Statefull functional component
  * <StaticQuery =`{}`
  */
-const SiteData = () => (
+const PageLinks = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -31,11 +31,11 @@ const SiteData = () => (
       }
     `}
     render={(data) => (
-      <div className="container-fluid-justified">
-        <div className="btn-group btn-group">
+      <div className="container">
+        <div className="btn-group flex-column btn-group justify-content-center">
           {data.allMarkdownRemark.edges.map(({ node }, index) => (
             <button className="btn btn-group" key={index}>
-              <a className="btn btn-primary" href={node.fields.slug}>{node.frontmatter.title}</a>
+              <a className="btn btn-primary text-center" href={node.fields.slug}>{node.frontmatter.title}</a>
             </button>
           ))}
         </div>
@@ -44,4 +44,4 @@ const SiteData = () => (
   />
 );
 
-export default SiteData;
+export default PageLinks;

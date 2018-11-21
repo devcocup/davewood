@@ -1,39 +1,47 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Footer from "../components/js/Footer";
+import Navbar from "../components/js/Navbar";
 
 export default ({ data }) => {
   console.log(data);
   return (
-    <div className="My-Image-Content" style={{ margin: `3rem` }}>
-      <h1 className="Page-Title">Image Reference</h1>
-      <p>Note: Sizes are in W | H format</p>
+    <div className="App">
+      <Navbar />
+      <div className="main row">
 
-      <table className="Images-Table">
-        <thead>
-          <tr>
-            <th>https://daveswoodworking.netlify.com/</th>
-            <th>Presentation Size</th>
-            <th>Original Size</th>
-            <th>Fixed Size</th>
-          </tr>
-        </thead>
-        <tbody className="Image-Details">
-          {data.allImageSharp.edges.map(({ node }, index) => (
-            <tr key={index}>
-              <td>{node.original.src}</td>
-              <td>
-                {node.fluid.presentationWidth} px | {node.fluid.presentationHeight} px
-              </td>
-              <td>
-                {node.original.width} px | {node.original.height} px
-              </td>
-              <td>
-                {node.fixed.width} px | {node.fixed.height} px
-              </td>
+        <h1 className="Page-Title col-12">Image Reference</h1>
+        <h3 className="Page-Subtitle col-12">Note: Sizes are in W <b>|</b> H format</h3>
+        <br />
+
+        <table className="col-10 table mx-auto table-bordered table-hover table-secondary">
+          <thead>
+            <tr className="bor">
+              <th className="bg-danger" scope="col text-white">https://daveswoodworking.netlify.com/</th>
+              <th className="bg-danger" scope="col text-white">Presentation Size</th>
+              <th className="bg-danger" scope="col text-white">Original Size</th>
+              <th className="bg-danger" scope="col text-white">Fixed Size</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {data.allImageSharp.edges.map(({ node }, index) => (
+              <tr key={index}>
+                <td><b>{node.original.src}</b></td>
+                <td>
+                  {node.fluid.presentationWidth} px <b>|</b> {node.fluid.presentationHeight} px
+              </td>
+                <td>
+                  {node.original.width} px <b>|</b> {node.original.height} px
+              </td>
+                <td>
+                  {node.fixed.width} px <b>|</b> {node.fixed.height} px
+              </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <Footer />
     </div>
   );
 };

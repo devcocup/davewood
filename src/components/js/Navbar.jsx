@@ -7,14 +7,23 @@ import React, { Component } from "react";
 class Navbar extends Component {
   render() {
     return (
-      <div className="navbar navbar-inverse">
+      <nav className="navbar navbar-extend-lg navbar-dark bg-dark">
+
         <div className="container-fluid">
+
           <h1 className="navbar-header">
-            <a className="navbar-brand" href="/">Dave's Woodworking</a>
+            <a className="navbar-brand text-capitalize" href="/">
+              Dave's Woodworking</a>
           </h1>
+
+          <form className="form-inline my-2 my-lg-0">
+            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+
         </div>
 
-      </div>
+      </nav>
     );
   }
 }
