@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import "./pages/index.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
