@@ -6,8 +6,7 @@ import { StaticQuery, graphql } from "gatsby";
  * <StaticQuery =`{}`
  */
 const PageLinks = () => (
-  <StaticQuery
-    query={graphql`
+  <StaticQuery query={graphql`
       query {
         site {
           siteMetadata {
@@ -18,7 +17,6 @@ const PageLinks = () => (
         allMarkdownRemark {
           edges {
             node {
-              html
               frontmatter {
                 title
               }
@@ -29,17 +27,16 @@ const PageLinks = () => (
           }
         }
       }
-    `}
-    render={(data) => (
-      <div className="align-text-center flex-row">
-        <div className="btn-group flex-column btn-group">
+    `} render={(data) => (
+      <template>
+        <div id="Page-Links" className="btn-group btn-group">
           {data.allMarkdownRemark.edges.map(({ node }, index) => (
-            <button className="btn btn-group" key={index}>
-              <a className="btn btn-primary text-center" href={node.fields.slug}>{node.frontmatter.title}</a>
+            <button className="btn btn-danger" key={index}>
+              <a className="btn nav-link" href={node.fields.slug}>{node.frontmatter.title}</a>
             </button>
           ))}
         </div>
-      </div>
+      </template>
     )}
   />
 );

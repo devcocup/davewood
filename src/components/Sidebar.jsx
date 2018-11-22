@@ -17,57 +17,48 @@ class Sidebar extends React.Component {
 
   render() {
     return (
-      <article id="Sidebar" className="h-100 col-2 bg-transparent">
+      <nav id="Sidebar" className="container">
 
-        <section className="btn-group-vertical justify-content-around">
+        <nav className="btn-group flex-column justify-content-center">
 
-          <a className="btn-danger btn-lg btn-block my-1"
-            id="Home" href="/">
+          <a className="btn-danger btn-block my-1 mx-auto" id="Home" href="/">
             Home
             </a>
 
-          <a className="btn-danger btn-lg btn-block my-1"
-            id="About" href="/md/About/" >
+          <a className="btn-danger btn-block my-1 mx-auto" id="About" href="/md/About/" >
             About
             </a>
 
-          <a className="btn-danger btn-lg btn-block my-1"
-            id="Bar" href="/md/Bar">
+          <a className="btn-danger btn-block my-1 mx-auto" id="Bar" href="/md/Bar">
             Bar
             </a>
 
-          <a className="btn-danger btn-lg btn-block my-1"
-            id="Basement" href="/md/Basement/">
+          <a className="btn-danger btn-block my-1 mx-auto" id="Basement" href="/md/Basement/">
             Basement Wall
             </a>
 
-          <a className="btn-danger btn-lg btn-block my-1"
-            id="BosleyStorage" href="/md/BosleyStorage">
+          <a className="btn-danger btn-block my-1 mx-auto" id="BosleyStorage" href="/md/BosleyStorage">
             Bosley Storage
             </a>
 
-          <a className="btn-danger btn-lg btn-block my-1"
-            id="Beverage" href="/md/BeverageStuff">
+          <a className="btn-danger btn-block my-1 mx-auto" id="Beverage" href="/md/BeverageStuff">
             Beer and Wine
               </a>
 
-          <a className="btn-danger btn-lg btn-block my-1"
-            id="CoffeeTables" href="/md/CoffeeTables/">
+          <a className="btn-danger btn-block my-1 mx-auto" id="CoffeeTables" href="/md/CoffeeTables/">
             Coffee Tables
               </a>
 
-          <a className="btn-danger btn-lg btn-block my-1"
-            href="/MyImgs/">
+          <a className="btn-danger btn-block my-1 mx-auto" id="ImageIndex" href="/MyImgs/">
             Image Reference
               </a>
 
-          <a className="btn-danger btn-lg btn-block my-1"
-            href="/md/Storage/">
+          <a className="btn-danger btn-block my-1 mx-auto" id="Storage" href="/md/Storage/">
             Storage
               </a>
 
-        </section>
-      </article>
+        </nav>
+      </nav>
     );
   }
 

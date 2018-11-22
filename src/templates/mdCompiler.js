@@ -8,13 +8,16 @@ import Sidebar from "../components/Sidebar";
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <div id="App">
+    <div id="root" className="App">
       <Navbar />
-      <Sidebar />
 
-      <div className="row">
-        <div className="main mx-auto" id="main" dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      <section id="main" className="row">
+        <div id="Sidebar-Container" className="col-3 mx-auto my-auto">
+          <Sidebar />
+        </div>
+
+        <div id="Markdown" className="col-9 mx-3 my-auto" dangerouslySetInnerHTML={{ __html: post.html }} />
+      </section>
       <Footer />
     </div>
   );

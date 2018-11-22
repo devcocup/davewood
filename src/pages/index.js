@@ -12,19 +12,19 @@ class App extends React.Component {
       <div className="App" id="root">
         <Navbar />
 
-        <div className="main row">
-          <div className="col-2" >
+        <section className="row" id="main">
+
+          <section className="col-2 flex-column" id="side-nav">
             <Sidebar />
-          </div>
+          </section>
 
-          <div className="col-10">
-            <section className="main container-fluid" id="main">
-              <CardGroup />
-            </section>
+          <section className="col-10 flex-column" id="content">
+            <CardGroup />
+            <br />
             <Card />
-          </div>
+          </section>
 
-        </div>
+        </section>
         <Footer />
       </div>
     );
