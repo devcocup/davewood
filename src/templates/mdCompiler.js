@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import "../pages/index.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Sidebar from "../components/Sidebar";
+import PageLinks from "../data/PageLinks";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -12,12 +12,12 @@ export default ({ data }) => {
     <div id="root" className="App">
       <Navbar />
 
-      <section id="main" className="row">
-        <div id="Sidebar-Container" className="col-3 mx-auto my-auto">
-          <Sidebar />
-        </div>
+      <div className="row">
+        <PageLinks />
+      </div>
 
-        <div id="Markdown" className="col-9 mx-3 my-auto" dangerouslySetInnerHTML={{ __html: post.html }} />
+      <section id="main" className="row">
+        <section id="content" className="col-12 d-block" dangerouslySetInnerHTML={{ __html: post.html }} />
       </section>
       <Footer />
     </div>

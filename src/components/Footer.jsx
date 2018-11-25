@@ -5,13 +5,12 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="navbar navbar-dark bg-dark">
-        <div className="container-fluid justify-content-center">
+        <div className="container-fluid text-center">
 
-          <div className="navbar-header">
-            <h4>Connect on <span><FacebookLink /></span>
-              and <span><InstagramLink /></span>
-            </h4>
+          <div className="navbar-header text-light">
+            <h5>Connect on Facebook and Instagram</h5>
           </div>
+          <FacebookLink /> <InstagramLink />
 
         </div>
 

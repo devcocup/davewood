@@ -28,15 +28,15 @@ const PageLinks = () => (
         }
       }
     `} render={(data) => (
-      <template>
-        <div id="Page-Links" className="btn-group btn-group">
-          {data.allMarkdownRemark.edges.map(({ node }, index) => (
-            <button className="btn btn-danger" key={index}>
-              <a className="btn nav-link" href={node.fields.slug}>{node.frontmatter.title}</a>
-            </button>
-          ))}
-        </div>
-      </template>
+
+      <nav id="site-nav" className="nav nav-link btn-group-sm">
+        {data.allMarkdownRemark.edges.map(({ node }, index) => (
+          <button className="btn btn-danger mx-1 my-1" key={index}>
+            <a className="text-center text-white" href={node.fields.slug}>{node.frontmatter.title}</a>
+          </button>
+        ))}
+      </nav>
+
     )}
   />
 );

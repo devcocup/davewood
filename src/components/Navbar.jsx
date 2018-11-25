@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import { IconGroup } from "./Icons";
 
 /**
  * Class Component
@@ -12,14 +13,17 @@ class Navbar extends React.Component {
         <div className="container-fluid">
 
           <h1 className="navbar-header">
-            <a className="navbar-brand text-capitalize" href="/">
+            <a className="navbar-brand" href="/">
               Dave's Woodworking</a>
           </h1>
 
-          <form id="Search" className="form-inline my-2 my-lg-0">
+          <IconGroup />
+
+
+          {/* <form id="Search" className="form-inline my-2 my-lg-0">
             <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
             <button className="btn btn-outline-success my-2 my-sm-0" type="submit">?</button>
-          </form>
+          </form> */}
 
         </div>
 

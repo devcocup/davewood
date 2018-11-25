@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import "./pages/index.css";
+import "./index.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -13,20 +13,18 @@ export default ({ data }) => {
 
       <section id="main" className="row">
 
-        <section id="page-header">
-          <h1 id="Page-Title" className="col-12">Image Reference</h1>
-          <h3 id="Page-Subtitle" className="col-12">Note: Sizes are in W <b>|</b> H format</h3>
+        <section id="page-header" className="page-item">
+          <h1 id="Page-Title">Image Reference</h1>
+          <h3 id="Page-Subtitle">Note: Sizes are in W <b>|</b> H format</h3>
         </section>
 
-        <table id="image-index" className="table col-10 mx-auto table-bordered table-hover table-secondary">
+        <table id="image-index" className="table col-10 mx-auto my-auto table-bordered table-hover table-secondary">
 
           <thead>
-            <tr className="row">
-              <th className="bg-danger" scope="col text-white">https://daveswoodworking.netlify.com/</th>
-              <th className="bg-danger" scope="col text-white">Presentation Size</th>
-              <th className="bg-danger" scope="col text-white">Original Size</th>
-              <th className="bg-danger" scope="col text-white">Fixed Size</th>
-            </tr>
+            <th className="bg-danger text-white">https://daveswoodworking.netlify.com/</th>
+            <th className="bg-danger text-white">Presentation Size</th>
+            <th className="bg-danger text-white">Original Size</th>
+            <th className="bg-danger text-white">Fixed Size</th>
           </thead>
 
           <tbody>

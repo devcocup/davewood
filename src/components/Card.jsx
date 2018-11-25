@@ -3,7 +3,7 @@ import React from "react";
 class Card extends React.Component {
   render() {
     return (
-      <div id="card" className="card mx-auto my-auto p-2 bg-light">
+      <div id="Card" className="card mx-2 p-2 shadow-lg bg-light">
         {/** {this.props.image} */}
         <img
           id="card-image"
