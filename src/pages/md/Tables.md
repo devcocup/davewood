@@ -1,5 +1,5 @@
 ---
-title: "Coffee Tables"
+title: "Tables"
 date: "2018-09-29"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Shelves and Hangers"
+title: "Shelves"
 date: "2018-09-30"
 ---
 

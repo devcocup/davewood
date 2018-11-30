@@ -1,5 +1,5 @@
 ---
-title: "Storing Things"
+title: "Storage"
 date: "2018-09-30"
 ---
 

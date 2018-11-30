@@ -1,5 +1,5 @@
 ---
-title: "Basement Renovations"
+title: "Basement"
 date: "2018-09-28"
 ---
 

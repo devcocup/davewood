@@ -1,5 +1,5 @@
 ---
-title: "Beverage Holders"
+title: "Beverages"
 date: "2018-09-30"
 ---
 
