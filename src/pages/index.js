@@ -4,7 +4,7 @@ import './index.css';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PageLinks from "../data/PageLinks";
-import { Card } from "../components/Card";
+import { CardGroup } from "../components/Card";
 
 class App extends React.Component {
   render() {
@@ -14,9 +14,13 @@ class App extends React.Component {
 
         <PageLinks />
 
+        <section id="Greeting" className="text-center">
+          <h1>Welcome to Dave's Woodworking</h1>
+          <h5>Follow the links above to see samples of Dave's work</h5>
+        </section>
 
-        <section className="row" id="main">
-          <Card />
+        <section className="mx-5 my-2" id="main">
+          <CardGroup />
         </section>
 
         <Footer />

@@ -1,20 +1,27 @@
 import React from 'react';
-import { FacebookLink, InstagramLink } from './Icons';
+import facebook from '../img/FontAwesomeSVGs/facebook.svg';
+import instagram from '../img/FontAwesomeSVGs/instagram.svg';
+
 
 class Footer extends React.Component {
   render() {
     return (
-      <div className="navbar navbar-dark bg-dark">
-        <div className="container-fluid text-center">
+      <nav className="navbar navbar-dark bg-dark">
+        <div className="container justify-content-center">
 
-          <div className="navbar-header text-light">
-            <h5>Connect on Facebook and Instagram</h5>
+          <div className="row navbar-text text-light align-self-center">
+            <h4 className="navbar-header">Connect on Facebook and Instagram</h4>
           </div>
-          <FacebookLink /> <InstagramLink />
+
+          <br />
+
+          <div className="nav-link justify-content-center">
+            <img src={facebook} width="36px" className="mx-2" alt="facebook" />
+            <img src={instagram} width="36px" className="mx-2" alt="instagram" />
+          </div>
 
         </div>
-
-      </div>
+      </nav>
     );
   }
 }

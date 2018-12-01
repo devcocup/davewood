@@ -1,5 +1,7 @@
 import React from "react";
-import { IconGroup } from "./Icons";
+import facebook from '../img/FontAwesomeSVGs/facebook.svg';
+import instagram from '../img/FontAwesomeSVGs/instagram.svg';
+import home from '../img/FontAwesomeSVGs/home-solid.svg';
 
 /**
  * Class Component
@@ -8,22 +10,18 @@ import { IconGroup } from "./Icons";
 class Navbar extends React.Component {
   render() {
     return (
-      <nav className="navbar navbar-collapse navbar-dark bg-dark">
+      <nav className="navbar navbar-dark bg-dark">
+        <div className="container text-center">
 
-        <div className="container-fluid">
+          <div className="navbar-text text-light align-self-center">
+            <h2 className="navbar-header"><a href="/">Dave's Woodworking</a></h2>
+          </div>
 
-          <h1 className="navbar-header">
-            <a className="navbar-brand" href="/">
-              Dave's Woodworking</a>
-          </h1>
-
-          <IconGroup />
-
-
-          {/* <form id="Search" className="form-inline my-2 my-lg-0">
-            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">?</button>
-          </form> */}
+          <div className="nav-link">
+            <img src={home} width="36px" className="mx-2" alt="home" />
+            <img src={facebook} width="36px" className="mx-2" alt="facebook" />
+            <img src={instagram} width="36px" className="mx-2" alt="instagram" />
+          </div>
 
         </div>
 

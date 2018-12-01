@@ -1,8 +1,7 @@
-/* Globals */
+/* Globals 
 body {
   justify-content: space-evenly;
-}
-
+}*/
 
 img {
   box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
@@ -21,14 +20,15 @@ img {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 600;
   vertical-align: middle;
+  text-align: center;
   background: url('http://i.stack.imgur.com/jGlzr.png');
   background-attachment: fixed;
   overflow: hidden;
 }
 
-#main {
+#main .row {
   max-width: 100vw;
-  margin-bottom: 1rem;
+  display: inline-flex;
 }
 
 #content {
@@ -42,11 +42,4 @@ img {
   border: 1px solid #000;
   background-color: #8a8888;
   margin-bottom: 1rem;
-}
-
-#icon {
-  color: #fff;
-  box-shadow: none;
-  background-color: transparent;
-  fill: #fff;
 }
