@@ -9,15 +9,13 @@ import PageLinks from "../data/PageLinks";
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <div id="root" className="App">
+    <div id="root">
       <Navbar />
+      <PageLinks />
 
-      <div className="row">
-        <PageLinks />
-      </div>
 
-      <section id="main" className="row">
-        <section id="content" className="col-12 d-block" dangerouslySetInnerHTML={{ __html: post.html }} />
+      <section id="main" className="container">
+        <section id="content" className="col-10 mx-auto text-center" dangerouslySetInnerHTML={{ __html: post.html }} />
       </section>
       <Footer />
     </div>

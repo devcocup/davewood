@@ -1,9 +1,26 @@
+/* Globals */
+body {
+  justify-content: space-evenly;
+}
+
+
+img {
+  box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
+  margin-bottom: 1rem;
+  max-width: 75vw;
+  justify-content: safe;
+}
+
+
+/* Custom Classes */
+
 #root {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  vertical-align: baseline;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+  vertical-align: middle;
   background: url('http://i.stack.imgur.com/jGlzr.png');
   background-attachment: fixed;
   overflow: hidden;
@@ -14,30 +31,22 @@
   margin-bottom: 1rem;
 }
 
-#content img {
-  box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
-  max-width: 75vw;
-  margin-bottom: 1rem;
-  align-self: center;
-}
-
-#icon {
-  font-size: 1rem;
-  color: #fff;
-}
-
 #content {
   display: block;
-  align-items: flex-start;
   text-align: center;
   padding: 8px;
   margin: 1rem;
 }
 
 #site-nav {
-  display: inline-flex;
   border: 1px solid #000;
   background-color: #8a8888;
-  flex-wrap: nowrap;
   margin-bottom: 1rem;
+}
+
+#icon {
+  color: #fff;
+  box-shadow: none;
+  background-color: transparent;
+  fill: #fff;
 }

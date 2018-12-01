@@ -11,14 +11,14 @@ export default ({ data }) => {
 
       <Navbar />
 
-      <section id="main" className="row">
+      <section id="main" className="container">
 
-        <section id="page-header" className="page-item">
+        <section id="page-header" className="col-12 text-center">
           <h1 id="Page-Title">Image Reference</h1>
           <h3 id="Page-Subtitle">Note: Sizes are in W <b>|</b> H format</h3>
         </section>
 
-        <table id="image-index" className="table col-10 mx-auto my-auto table-bordered table-hover table-secondary">
+        <table id="image-index" className="table mx-auto my-auto table-bordered table-hover table-secondary">
 
           <thead>
             <th className="bg-danger text-white">https://daveswoodworking.netlify.com/</th>

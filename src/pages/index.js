@@ -11,9 +11,9 @@ class App extends React.Component {
     return (
       <div className="App" id="root">
         <Navbar />
-        <div className="row">
-          <PageLinks />
-        </div>
+
+        <PageLinks />
+
 
         <section className="row" id="main">
           <Card />
