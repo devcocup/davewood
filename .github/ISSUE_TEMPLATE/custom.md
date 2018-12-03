@@ -1,8 +1,8 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
+name: Custom Form
+about: Submit Feedback via GitHub Issues
 ---
 
-# Is There Something Else You're Dying to Tell Me?
+# Request Form
 
-Describe your issue here
+What do you need to tell us?
