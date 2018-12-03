@@ -15,15 +15,16 @@ class App extends React.Component {
         <PageLinks />
 
         <section id="Greeting" className="text-center">
-          <h1>Welcome to Dave's Woodworking</h1>
-          <h5>Follow the links above to see samples of Dave's work</h5>
+          <h1><b>Welcome to Dave's Woodworking</b></h1>
+          <h5><b>Follow the links above to see samples of Dave's work</b></h5>
         </section>
 
-        <section className="mx-5 my-2" id="main">
+        <section className="col-12" id="main">
           <CardGroup />
         </section>
 
         <Footer />
+
       </div>
     );
   }
