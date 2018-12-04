@@ -4,13 +4,10 @@ const siteMetadata = {
   siteURL: "https://daveswoodworking.netlify.com/",
   title: "Dave's Woodworking",
   description: "A Website Showcasing David Miles' Woodworking Projects",
-  socialMedia: [
-    {
-      Name: "Facebook",
-      Link: "https://www.facebook.com/Daves-Woodworking-1577530669229362/",
-    },
-    { Name: "Instagram", Link: "https://www.instagram.com/dtmiles1591/" },
-  ],
+  socialMedia: {
+    facebook: "https://www.facebook.com/Daves-Woodworking-1577530669229362/",
+    instagram: "https://www.instagram.com/dtmiles1591/"
+  },
 };
 
 module.exports = {

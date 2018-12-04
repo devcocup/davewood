@@ -20,11 +20,11 @@ class Navbar extends React.Component {
             <a className="nav-link" href="/">
               <img src="https://img.icons8.com/metro/36/e7e6e6/home.png" width="36px" className="img-fluid text-light" alt="home" />
             </a>
-            <a className="nav-link" href={siteMetadata.socialMedia}>
-              <img src="https://img.icons8.com/metro/50/e7e6e6/linkedin.png" width="36px" className="mx-1" alt="linkedin" />
+            <a className="nav-link" href={siteMetadata.socialMedia.facebook}>
+              <img src="https://img.icons8.com/metro/50/e7e6e6/facebook.png" width="36px" className="mx-1" alt="facebook" />
             </a>
-            <a className="nav-link" href={siteMetadata.socialMedia}>
-              <img src="https://img.icons8.com/metro/50/e7e6e6/github.png" width="36px" className="mx-1" alt="github" />
+            <a className="nav-link" href={siteMetadata.socialMedia.instagram}>
+              <img src="https://img.icons8.com/metro/50/e7e6e6/instagram.png" width="36px" className="mx-1" alt="instagram" />
             </a>
           </div>
 
