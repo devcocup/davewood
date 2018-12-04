@@ -1,29 +1,34 @@
 import React from 'react';
+import { siteMetadata } from '../../gatsby-config'
+
 class Footer extends React.Component {
   render() {
     return (
       <nav className="navbar navbar-dark bg-dark">
         <div className="container">
 
-          <nav className="col-12 text-light">
-            <div className="navbar-text">
-              <h4 className="navbar-header">Connect on Facebook and Instagram</h4>
+          <nav className="col-12">
+            <div className="navbar-text text-white">
+              <h4 className="navbar-header">Connect on LinkedIn & GitHub</h4>
             </div>
 
-            <div id="icons" className="row justify-content-center"><a className="nav-link" href="/">
-              <img src="https://img.icons8.com/metro/36/ffffff/home.png" width="36px" className="img-fluid text-light" alt="home" />
-            </a>
-              <a className="nav-link" href="https://www.facebook.com/Daves-Woodworking-1577530669229362/">
-                <img src="https://img.icons8.com/metro/50/ffffff/facebook.png" width="36px" className="mx-1" alt="facebook" />
+            <div id="icons" className="row justify-content-center">
+
+              <a className="nav-link" href="/">
+                <img src="https://img.icons8.com/metro/36/e7e6e6/home.png" width="36px" className="img-fluid text-light" alt="home" />
               </a>
-              <a className="nav-link" href="https://www.instagram.com/dtmiles1591/">
-                <img src="https://img.icons8.com/metro/50/ffffff/instagram-new.png" width="36px" className="mx-1" alt="instagram" />
+              <a className="nav-link" href={siteMetadata.socialMedia}>
+                <img src="https://img.icons8.com/metro/50/e7e6e6/linkedin.png" width="36px" className="mx-1" alt="linkedin" />
+              </a>
+              <a className="nav-link" href={siteMetadata.socialMedia}>
+                <img src="https://img.icons8.com/metro/50/e7e6e6/github.png" width="36px" className="mx-1" alt="github" />
               </a>
             </div>
 
           </nav>
 
         </div>
+        {/* </div> */}
       </nav>
     );
   }
