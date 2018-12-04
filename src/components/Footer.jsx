@@ -1,24 +1,28 @@
 import React from 'react';
-import facebook from '../img/FontAwesomeSVGs/facebook.svg';
-import instagram from '../img/FontAwesomeSVGs/instagram.svg';
-
-
 class Footer extends React.Component {
   render() {
     return (
       <nav className="navbar navbar-dark bg-dark">
-        <div className="container justify-content-center">
+        <div className="container">
 
-          <div className="row navbar-text text-light align-self-center">
-            <h4 className="navbar-header">Connect on Facebook and Instagram</h4>
-          </div>
+          <nav className="col-12 text-light">
+            <div className="navbar-text">
+              <h4 className="navbar-header">Connect on Facebook and Instagram</h4>
+            </div>
 
-          <br />
+            <div id="icons" className="row justify-content-center">
+              <a className="nav-link" href="/">
+                <img src="/static/home-solid-de6c1dfc9002ccefef36c78a5e2bad2e.svg" width="45px" className="mx-1" alt="home" />
+              </a>
+              <a className="nav-link" href="https://www.facebook.com/Daves-Woodworking-1577530669229362/">
+                <img src="/static/facebook-20f36cc26c5f2d9e9447dc96079bf727.svg" width="36px" className="mx-1" alt="facebook" />
+              </a>
+              <a className="nav-link" href="https://www.instagram.com/dtmiles1591/">
+                <img src="/static/instagram-54116aa3def71e1475e7a7cfdb26c408.svg" width="36px" className="mx-1" alt="instagram" />
+              </a>
+            </div>
 
-          <div className="nav-link justify-content-center">
-            <img src={facebook} width="36px" className="mx-2" alt="facebook" />
-            <img src={instagram} width="36px" className="mx-2" alt="instagram" />
-          </div>
+          </nav>
 
         </div>
       </nav>

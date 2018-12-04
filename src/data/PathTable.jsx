@@ -26,7 +26,7 @@ export default () => (
             <thead className="bg-danger text-white">
               <th>Index</th>
               <th>/ Src Instance / Relative Path .Ext</th>
-              <th>Host / PublicURL</th>
+              <th>Static URL</th>
             </thead>
 
             <tbody>
@@ -43,7 +43,7 @@ export default () => (
                   </td>
 
                   <td id="public-url">
-                    <a href={node.publicURL}>host/{node.publicURL}</a>
+                    <a href={node.publicURL}>{node.publicURL}</a>
                   </td>
 
                 </tr>

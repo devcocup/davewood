@@ -22,6 +22,7 @@ export default ({ data }) => {
 
           <thead>
             <th className="bg-danger text-white">https://daveswoodworking.netlify.com/</th>
+            <th className="bg-danger text-white">Fluid Src</th>
             <th className="bg-danger text-white">Presentation Size</th>
             <th className="bg-danger text-white">Original Size</th>
             <th className="bg-danger text-white">Fixed Size</th>
@@ -29,8 +30,9 @@ export default ({ data }) => {
 
           <tbody>
             {data.allImageSharp.edges.map(({ node }, index) => (
-              <tr key={index}>
+              <tr key={node.id}>
                 <td> <b>{node.original.src}</b> </td>
+                <td> <b>{node.fluid.src}</b> </td>
                 <td> {node.fluid.presentationWidth} px <b>|</b> {node.fluid.presentationHeight} px </td>
                 <td> {node.original.width} px <b>|</b> {node.original.height} px </td>
                 <td> {node.fixed.width} px <b>|</b> {node.fixed.height} px </td>
@@ -53,17 +55,19 @@ export const query = graphql`
     allImageSharp {
       edges {
         node {
+          id
           original {
             src
             width
             height
           }
           fluid {
-            originalName
+            src
             presentationWidth
             presentationHeight
           }
           fixed {
+            src
             width
             height
           }

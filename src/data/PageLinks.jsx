@@ -23,7 +23,7 @@ const PageLinks = () => (
       <nav id="site-nav" className="nav justify-content-center">
 
         {data.allMarkdownRemark.edges.map(({ node }, index) => (
-          <div className="nav-item" id={node.id}>
+          <div className="nav-item" id={node.name}>
             <a
               className="nav-link btn-sm btn-danger mx-2 my-1"
               key={index}

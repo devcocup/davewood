@@ -1,7 +1,4 @@
 import React from "react";
-import facebook from '../img/FontAwesomeSVGs/facebook.svg';
-import instagram from '../img/FontAwesomeSVGs/instagram.svg';
-import home from '../img/FontAwesomeSVGs/home-solid.svg';
 
 /**
  * Class Component
@@ -10,22 +7,29 @@ import home from '../img/FontAwesomeSVGs/home-solid.svg';
 class Navbar extends React.Component {
   render() {
     return (
-      <nav className="navbar navbar-dark bg-dark">
-        <div className="container text-center">
+      <div className="navbar navbar-dark bg-dark">
 
-          <div className="navbar-text text-light align-self-center">
+        <div className="container-fluid">
+
+          <div className="navbar-text text-light">
             <h2 className="navbar-header"><a href="/">Dave's Woodworking</a></h2>
           </div>
 
-          <div className="nav-link">
-            <img src={home} width="36px" className="mx-2" alt="home" />
-            <img src={facebook} width="36px" className="mx-2" alt="facebook" />
-            <img src={instagram} width="36px" className="mx-2" alt="instagram" />
+          <div id="icons" className="row text-center">
+            <a className="nav-link" href="/">
+              <img src="/static/home-solid-de6c1dfc9002ccefef36c78a5e2bad2e.svg" width="45px" className="mx-1" alt="home" />
+            </a>
+            <a className="nav-link" href="https://www.facebook.com/Daves-Woodworking-1577530669229362/">
+              <img src="/static/facebook-20f36cc26c5f2d9e9447dc96079bf727.svg" width="36px" className="mx-1" alt="facebook" />
+            </a>
+            <a className="nav-link" href="https://www.instagram.com/dtmiles1591/">
+              <img src="/static/instagram-54116aa3def71e1475e7a7cfdb26c408.svg" width="36px" className="mx-1" alt="instagram" />
+            </a>
           </div>
 
         </div>
 
-      </nav>
+      </div>
     );
   }
 }

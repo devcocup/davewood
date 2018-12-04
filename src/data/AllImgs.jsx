@@ -1,24 +1,14 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
-export default () => (
+export const AllImages = () => (
   <StaticQuery query={graphql`
-  query MyImages {
+  query AllImages {
   allImageSharp {
     edges {
       node {
         id
-        original {
-          src
-        }
-      }
-      previous {
-        original {
-          src
-        }
-      }
-      next {
-        original {
+        fluid{
           src
         }
       }
@@ -26,20 +16,11 @@ export default () => (
   }
 }`}
     render={(data) => (
-      <div id="AllImg" className="container">
+      <div id="AllImages" className="container">
         {data.allImageSharp.edges.map(({ node }, index) => (
-
-          <div className="card" key={node.id}>
-            <img className="card-img" src={node.original.src} id={index} alt="" />
-            <div className="card-body">
-              <a className="card-link" href={node.original.src}>{node.original.src}</a>
-            </div>
-          </div>
+          <img className="img-fluid" key={node.id} src={node.fluid.src} id={node.id} alt="" />
         ))}
-
       </div>
     )}
   />
 );
-
-export { AllImg }

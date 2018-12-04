@@ -30,27 +30,27 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${ __dirname }/src/`,
+        path: `${__dirname}/src/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `img`,
-        path: `${ __dirname }/src/img/`,
+        path: `${__dirname}/src/pages/img/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${ __dirname }/src/pages/`,
+        path: `${__dirname}/src/pages/`,
       },
     },
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
-        path: `${ __dirname }/src/pages/`,
+        path: `${__dirname}/src/pages/`,
       },
     },
     {

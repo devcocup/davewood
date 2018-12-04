@@ -1,20 +1,22 @@
 import React from "react";
+import PageLinks from '../data/PageLinks';
+import AllImages from '../data/AllImgs';
+import { AllFiles } from '../data/AllFiles';
+import { PathTable } from '../data/PathTable';
 
 class Card extends React.Component {
   render() {
     return (
 
       <div id="Card"
-        className="card mx-2 my-2 p-2 shadow-md bg-light">
+        className="card mx-2 my-2 p-2 shadow-lg bg-secondary">
 
-        <img
-          id="card-image"
+        <img id="card-image"
           className="card shadow-lg img-fluid"
           src="https://picsum.photos/300/200/?random"
           alt="" />
 
-        <div
-          id="card-body"
+        <div id="card-body"
           className="card-body text-center">
 
           <h3 id="card-title"
@@ -25,7 +27,10 @@ class Card extends React.Component {
             className="card-text text-truncate"
           >Card Text</p>
 
-          <a href="/" className="btn btn-danger btn-block" >Link</a>
+          <a id="card-link"
+            href="/"
+            className="btn btn-danger btn-block"
+          >Link</a>
 
         </div>
 
@@ -47,4 +52,24 @@ const CardGroup = () => {
   );
 }
 
-export { CardGroup, Card };
+const ProjectCard = (data) => {
+  return (
+    <Card id="Projects">
+
+      <div className="card-body">
+        <div className="card-header">
+          <h1>{data.title}</h1>
+        </div>
+
+        <div className="card-img">
+          <img className="img-fluid" src={data.img} />
+        </div>
+
+        <div className="card-link"><a href={data.link} alt="link">{data.name}</a></div>
+      </div>
+
+    </Card>
+  );
+}
+
+export { CardGroup, Card, ProjectCard };

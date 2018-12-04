@@ -13,8 +13,9 @@ export default ({ data }) => {
       <Navbar />
       <PageLinks />
 
-      <section id="main" className="container">
-        <section id="content" className="col-10 mx-auto text-center" dangerouslySetInnerHTML={{ __html: post.html }} />
+      <section id="Page" className="container bg-light">
+        <section id="main"
+          dangerouslySetInnerHTML={{ __html: post.html }} />
       </section>
       <Footer />
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
-export default () => (
+const AllFiles = () => (
   <StaticQuery
     query={graphql`
     query AllFiles {
@@ -17,10 +17,10 @@ export default () => (
     }
   }
   `} render={(data) => (
-      <div className="AllFiles">
+      <div className="container">
         {data.allFile.edges.map(({ node }, index) => (
-          <div key={index} id={node.name} className="py-auto">
-            <a href={node.publicURL}>{node.name}</a>
+          <div key={index} id={node.name} className="my-1 mx-1">
+            <a className="btn btn-danger btn-sm" href={node.publicURL}>{node.name}</a>
           </div>
         ))}
       </div>
@@ -28,4 +28,4 @@ export default () => (
   />
 );
 
-export { AllFiles }
+export default AllFiles;
