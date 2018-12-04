@@ -8,7 +8,7 @@ import { siteMetadata } from '../../gatsby-config'
 class Navbar extends React.Component {
   render() {
     return (
-      <div className="navbar navbar-dark bg-success">
+      <div className="navbar navbar-dark bg-dark">
 
         <div className="container-fluid">
 
@@ -18,13 +18,13 @@ class Navbar extends React.Component {
 
           <div id="icons" className="row text-center">
             <a className="nav-link" href="/">
-              <img src="https://img.icons8.com/metro/36/ffffff/home.png" width="36px" className="img-fluid text-light" alt="home" />
+              <img src="https://img.icons8.com/metro/36/e7e6e6/home.png" width="36px" className="img-fluid text-light" alt="home" />
             </a>
             <a className="nav-link" href={siteMetadata.socialMedia}>
-              <img src="https://img.icons8.com/metro/50/ffffff/linkedin.png" width="36px" className="mx-1" alt="linkedin" />
+              <img src="https://img.icons8.com/metro/50/e7e6e6/linkedin.png" width="36px" className="mx-1" alt="linkedin" />
             </a>
             <a className="nav-link" href={siteMetadata.socialMedia}>
-              <img src="https://img.icons8.com/metro/50/ffffff/github.png" width="36px" className="mx-1" alt="github" />
+              <img src="https://img.icons8.com/metro/50/e7e6e6/github.png" width="36px" className="mx-1" alt="github" />
             </a>
           </div>
 
