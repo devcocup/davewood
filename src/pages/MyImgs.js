@@ -18,29 +18,32 @@ export default ({ data }) => {
           <h3 id="Page-Subtitle">Note: Sizes are in W <b>|</b> H format</h3>
         </section>
 
-        <table id="image-index" className="table mx-auto my-auto table-bordered table-hover table-secondary">
+        <section className="container flex-column">
+          <table id="image-index" className="table table-bordered table-hover table-secondary">
 
-          <thead>
-            <th className="bg-danger text-white">https://daveswoodworking.netlify.com/</th>
-            <th className="bg-danger text-white">Fluid Src</th>
-            <th className="bg-danger text-white">Presentation Size</th>
-            <th className="bg-danger text-white">Original Size</th>
-            <th className="bg-danger text-white">Fixed Size</th>
-          </thead>
+            <thead>
+              <th className="bg-danger text-white">https://daveswoodworking.netlify.com/</th>
+              <th className="bg-danger text-white">Fluid Src</th>
+              <th className="bg-danger text-white">Presentation Size</th>
+              <th className="bg-danger text-white">Original Size</th>
+              <th className="bg-danger text-white">Fixed Size</th>
+            </thead>
 
-          <tbody>
-            {data.allImageSharp.edges.map(({ node }, index) => (
-              <tr key={node.id}>
-                <td> <b>{node.original.src}</b> </td>
-                <td> <b>{node.fluid.src}</b> </td>
-                <td> {node.fluid.presentationWidth} px <b>|</b> {node.fluid.presentationHeight} px </td>
-                <td> {node.original.width} px <b>|</b> {node.original.height} px </td>
-                <td> {node.fixed.width} px <b>|</b> {node.fixed.height} px </td>
-              </tr>
-            ))}
-          </tbody>
+            <tbody>
+              {data.allImageSharp.edges.map(({ node }, index) => (
+                <tr key={node.id}>
+                  <td> <b>{node.original.src}</b> </td>
+                  <td> <b>{node.fluid.src}</b> </td>
+                  <td> {node.fluid.presentationWidth} px <b>|</b> {node.fluid.presentationHeight} px </td>
+                  <td> {node.original.width} px <b>|</b> {node.original.height} px </td>
+                  <td> {node.fixed.width} px <b>|</b> {node.fixed.height} px </td>
+                </tr>
+              ))}
+            </tbody>
 
-        </table>
+          </table>
+
+        </section>
 
       </section>
 

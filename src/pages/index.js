@@ -4,8 +4,12 @@ import './index.css';
 import { siteMetadata } from '../../gatsby-config'
 import Navbar from "../components/Navbar";
 import PageLinks from "../data/PageLinks";
-import { Card, CardGroup } from "../components/Card";
 import Footer from "../components/Footer";
+
+import { Card, CardGroup, ProjectCard } from "../components/Card";
+import Logo from "../pages/img/logo.png";
+//import { Paginate } from '../components/Paginate';
+import Me from "../components/Me";
 
 class App extends React.Component {
   render() {
@@ -15,23 +19,22 @@ class App extends React.Component {
 
         <PageLinks />
 
-        <section id="Page" className="container bg-light text-center mx-auto">
+        <section id="Page" className="container bg-light">
 
-          <section id="greeting">
+          <section id="greeting" className="col flex-row">
             <h1><b>Welcome to {siteMetadata.title}</b></h1>
-            <h5><b>Follow the links above to see samples of {siteMetadata.author}'s work</b></h5>
+            <h5><b>Follow the links above to see samples of David's work</b></h5>
           </section>
 
           <section id="main" className="col flex-row">
-            <Card />
+            <div>This will be the main "page"</div>
           </section>
 
           <section id="attribution" className="col flex-row">
-            <CardGroup />
+            <Me />
           </section>
 
         </section>
-        <br />
 
         <Footer />
 

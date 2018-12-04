@@ -2,7 +2,8 @@ const path = require(`path`);
 
 const siteMetadata = {
   siteURL: "https://daveswoodworking.netlify.com/",
-  title: "Dave's Woodworking",
+  title: "Miles Woodworking",
+  logo: "public/favicon.svg",
   description: "A Website Showcasing David Miles' Woodworking Projects",
   socialMedia: {
     facebook: "https://www.facebook.com/Daves-Woodworking-1577530669229362/",
