@@ -1,13 +1,3 @@
-/* Globals */
-
-img {
-  box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
-  margin-bottom: 1rem;
-  max-width: 75vw;
-}
-
-/* Custom Classes */
-
 #root {
   margin: 0;
   width: 100vw;
@@ -30,8 +20,9 @@ img {
   box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
   border: 1px solid #000;
   text-align: center;
-  display: block;
-  margin: 1rem;
+  display: inherit;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 #main {
@@ -50,4 +41,10 @@ img {
 h3 {
   margin-bottom: 1rem;
   font-style: bold;
+}
+
+img {
+  box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
+  margin-bottom: 1rem;
+  max-width: 75vw;
 }
