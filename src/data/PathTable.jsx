@@ -18,8 +18,18 @@ export default () => (
   }
 }`}
     render={(data) => (
-      <div id="PathTable" className="row">
-
+      <div id="PathTable" className="container">
+        {data.allFile.edges.map(({ node }, index) => (
+          <div>
+            <a href={node.publicURL}>
+              <img src={node.publicURL} alt={node.name} />
+            </a>
+          </div>
+        ))}
+      </div>
+    )}
+  />
+);/**
         <div className="col-12">
 
           <table className="table table-dark table-bordered">
@@ -30,16 +40,15 @@ export default () => (
             </thead>
 
             <tbody>
-              {/** This is the body of the table 
-              */}{data.allFile.edges.map(({ node }, index) => (
+              {data.allFile.edges.map(({ node }, index) => (
                 <tr key={index}>
 
                   <td id="index">
-                    {index}
+                    index}
                   </td>
 
                   <td id="relative-path">
-                    /{node.sourceInstanceName}/{node.relativePath}
+                    /{node.sourceInstanceName}/node.relativePath}
                   </td>
 
                   <td id="public-url">
@@ -59,6 +68,6 @@ export default () => (
     )}
   />
 );
-
+ */
 
 export { PathTable };

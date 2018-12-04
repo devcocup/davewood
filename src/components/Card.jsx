@@ -46,6 +46,7 @@ const CardGroup = () => {
       <div className="card-deck">
         <Card />
         <Card />
+        <Card />
       </div>
     </div>
 

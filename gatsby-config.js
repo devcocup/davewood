@@ -1,19 +1,15 @@
 const path = require(`path`);
 
 const siteMetadata = {
-  siteURL: "https://pat-facts.netlify.com/",
-  title: "Pat Facts",
-  description: "Patrick Powell's Personal Blog and Resources",
-  author: "Patrick Powell",
-  socialMedia: [
-    {
-      facebook: `https://facebook.com/patrick.powell1/`,
-      linkedin: `https://linkedin.com/in/prpowell1277/`,
-      twitter: `https://twitter.com/patp0w/`,
-      github: `https://github.com/prp1277/`
-    }
-  ],
-}
+  siteURL: "https://daveswoodworking.netlify.com/",
+  title: "Miles Woodworking",
+  logo: "public/favicon.svg",
+  description: "A Website Showcasing David Miles' Woodworking Projects",
+  socialMedia: {
+    facebook: "https://www.facebook.com/Daves-Woodworking-1577530669229362/",
+    instagram: "https://www.instagram.com/dtmiles1591/"
+  },
+};
 
 module.exports = {
   siteMetadata: siteMetadata,
