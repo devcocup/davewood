@@ -1,6 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import { siteMetadata } from '../../gatsby-config'
 import Navbar from "../components/Navbar";
 import PageLinks from "../data/PageLinks";
 import { Card, CardGroup } from "../components/Card";
@@ -17,8 +18,8 @@ class App extends React.Component {
         <section id="Page" className="container bg-light text-center mx-auto">
 
           <section id="greeting">
-            <h1><b>Welcome to Dave's Woodworking</b></h1>
-            <h5><b>Follow the links above to see samples of Dave's work</b></h5>
+            <h1><b>Welcome to {siteMetadata.title}</b></h1>
+            <h5><b>Follow the links above to see samples of {siteMetadata.author}'s work</b></h5>
           </section>
 
           <section id="main" className="col flex-row">

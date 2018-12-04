@@ -4,6 +4,7 @@ const siteMetadata = {
   siteURL: "https://pat-facts.netlify.com/",
   title: "Pat Facts",
   description: "Patrick Powell's Personal Blog and Resources",
+  author: "Patrick Powell",
   socialMedia: [
     {
       facebook: `https://facebook.com/patrick.powell1/`,
