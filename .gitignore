@@ -57,6 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 .vscode
+req.rest
+req.http
 
 .cache/
 public
