@@ -9,12 +9,18 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="navbar navbar-dark bg-dark">
-
         <div className="container-fluid">
 
+          <a className="navbar-brand" href="/">
+            <img id="brand" className="img-fluid bg-light" src="/icons/icon-144x144.png" alt={siteMetadata.title} />
+          </a>
+
+          <h1 className="text-light">{siteMetadata.title}</h1>
+
+          {/* 
           <div className="navbar-text text-light">
             <h2 className="navbar-header"><a href="/">{siteMetadata.title}</a></h2>
-          </div>
+          </div> */}
 
           <div id="icons" className="row text-center">
             <a className="nav-link" href="/">

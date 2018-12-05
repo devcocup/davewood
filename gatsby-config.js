@@ -2,13 +2,26 @@ const path = require(`path`);
 
 const siteMetadata = {
   siteURL: "https://daveswoodworking.netlify.com/",
-  title: "Miles Woodworking",
-  logo: "public/favicon.svg",
+  title: "Miles Woodwork",
   description: "A Website Showcasing David Miles' Woodworking Projects",
-  socialMedia: {
-    facebook: "https://www.facebook.com/Daves-Woodworking-1577530669229362/",
-    instagram: "https://www.instagram.com/dtmiles1591/"
+  homePage: "https://github.com/prp1277/DavesWoodwork#daves-woodworking",
+  contact: {
+    name: "Patrick Powell",
+    email: "MailTo:prp1277@gmail.com",
+    github: "https://github.com/prp1277/",
+    linkedin: "https://linkedin.com/in/prpowell1277/",
+    twitter: "https://twitter.com/patp0w/"
   },
+  socialMedia: {
+    facebook: {
+      url: "https://www.facebook.com/Daves-Woodworking-1577530669229362/",
+      logo: "https://img.icons8.com/metro/50/e7e6e6/facebook.png"
+    },
+    instagram: {
+      url: "https://www.instagram.com/dtmiles1591/",
+      logo: "https://img.icons8.com/metro/50/e7e6e6/instagram.png"
+    },
+  }
 };
 
 module.exports = {
@@ -18,6 +31,18 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "DavesWoodworking",
+        short_name: "DavesWoodworking",
+        start_url: ".",
+        background_color: "#000",
+        theme_color: "#0563c1",
+        display: "minimal-ui",
+        icon: "src/favicon.svg"
+      }
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

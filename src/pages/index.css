@@ -38,6 +38,11 @@
   max-width: 25vw;
 }
 
+#brand {
+  color: #fff;
+  fill: #fff;
+}
+
 h3 {
   margin-bottom: 1rem;
   font-style: bold;
