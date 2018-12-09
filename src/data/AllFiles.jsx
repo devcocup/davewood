@@ -9,7 +9,6 @@ const AllFiles = () => (
         edges {
           node {
             name
-            sourceInstanceName
             relativePath
             publicURL
         }
@@ -19,7 +18,7 @@ const AllFiles = () => (
   `} render={(data) => (
       <div className="container">
         {data.allFile.edges.map(({ node }, index) => (
-          <div key={index} id={node.name} className="my-1 mx-1">
+          <div key={index} id={node.relativePath} className="my-1 mx-1">
             <a className="btn btn-danger btn-sm" href={node.publicURL}>{node.name}</a>
           </div>
         ))}

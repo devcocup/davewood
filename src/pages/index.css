@@ -7,7 +7,7 @@
   font-weight: 600;
   font-size: larger;
   text-align: center;
-  background: url('http://i.stack.imgur.com/jGlzr.png');
+  background: url('/static/woodgrain-1b892e5674474a039215f8af3b27cc89.png');
   background-attachment: fixed;
 }
 
@@ -39,8 +39,7 @@
 }
 
 #brand {
-  color: #fff;
-  fill: #fff;
+max-height: 25vh;
 }
 
 h3 {
@@ -52,4 +51,16 @@ img {
   box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
   margin-bottom: 1rem;
   max-width: 75vw;
+}
+
+table {
+  font-size: 12px;
+}
+
+#IntroImg {
+  max-width: 25vw;
+}
+
+.card {
+  background-color:rgb(0,0,0);background-image:url('http://www.zingerbugimages.com/backgrounds/red_and_green_stars.gif');background-position:top left;background-repeat:repeat;background-attachment:fixed;
 }

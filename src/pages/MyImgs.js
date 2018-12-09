@@ -18,7 +18,7 @@ export default ({ data }) => {
           <h3 id="Page-Subtitle">Note: Sizes are in W <b>|</b> H format</h3>
         </section>
 
-        <section className="container flex-column">
+        <section className="col-10">
           <table id="image-index" className="table table-bordered table-hover table-secondary">
 
             <thead>

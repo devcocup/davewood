@@ -1,7 +1,7 @@
 const path = require(`path`);
 
 const siteMetadata = {
-  siteURL: "https://daveswoodworking.netlify.com/",
+  siteURL: "https://daveswoodworking.netlify.com",
   title: "Miles Woodwork",
   description: "A Website Showcasing David Miles' Woodworking Projects",
   homePage: "https://github.com/prp1277/DavesWoodwork#daves-woodworking",
@@ -28,21 +28,23 @@ module.exports = {
   siteMetadata: siteMetadata,
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "DavesWoodworking",
-        short_name: "DavesWoodworking",
-        start_url: ".",
-        background_color: "#000",
-        theme_color: "#0563c1",
+        name: "DavesWoodwork",
+        short_name: "DavesWoodwork",
+        start_url: "/",
+        background_color: "#E7E6E6",
+        theme_color: "#DC3545",
         display: "minimal-ui",
         icon: "src/favicon.svg"
       }
     },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -82,7 +84,7 @@ module.exports = {
         headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
         allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
         mergeSecurityHeaders: true, // boolean to turn off the default security headers
-        mergeLinkHeaders: false, // boolean to turn off the default gatsby js headers
+        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
         mergeCachingHeaders: true, // boolean to turn off the default caching headers
         transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
         generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths

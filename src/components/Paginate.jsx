@@ -14,28 +14,34 @@ class Paginate extends React.Component {
 
 const ActivePage = ({ data }) => (
   <StaticQuery query={graphql`
-  query Paginate {
-  allSitePage {
-    edges {
-      node {
+  query{
+  allMarkdownRemark{
+    edges{
+      node{
         id
-        path
+        fields{
+          slug
+        }
       }
-      next {
-        path
+      previous{
+        fields{
+          slug
+        }
       }
-      previous {
-        path
+      next{
+        fields{
+          slug
+        }
       }
     }
   }
 }
   `} render={(data) => {
       <nav className="nav-item">
-        {data.allSitePage.edges.map(({ node }, index) => {
-          <div key={node.id}>
-            <a className="nav-link" href={data.node.next.path}>Next</a>
-            <a className="nav-link" href={data.node.previous.path}>Previous</a>
+        {data.allMarkdownRemark.edges.map(({ edges }, index) => {
+          <div key={edges.node.id}>
+            <a className="nav-link" href={edges.next.fields.slug}>Next</a>
+            <a className="nav-link" href={edges.previous.fields.slug}>Previous</a>
           </div>
         })}
       </nav>
