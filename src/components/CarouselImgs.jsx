@@ -12,7 +12,6 @@ const CarouselImgs = (data) => {
       query{
         site {
           siteMetadata {
-            siteURL
             title
           }
         }
