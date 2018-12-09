@@ -1,7 +1,7 @@
 const path = require(`path`);
 
 const siteMetadata = {
-  siteURL: "https://daveswoodworking.netlify.com",
+  siteUrl: "https://daveswoodworking.netlify.com",
   title: "Miles Woodwork",
   description: "A Website Showcasing David Miles' Woodworking Projects",
   homePage: "https://github.com/prp1277/DavesWoodwork#daves-woodworking",
