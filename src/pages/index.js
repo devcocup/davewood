@@ -16,7 +16,6 @@ class App extends React.Component {
           <meta charSet="utf-8" />
           <title>{siteMetadata.title}</title>
           <meta name="description" content={siteMetadata.description} />
-          <link rel="canonical" href={siteMetadata.siteURL} />
         </Helmet>
         <Navbar />
 

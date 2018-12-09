@@ -10,6 +10,7 @@ class Navbar extends React.Component {
     return (
       <div className="navbar navbar-dark bg-dark">
         <div className="container-fluid">
+
           <div className="col-4">
             <a className="navbar-brand" href="/">
               <img id="brand" className="img-responsive bg-light" src="/icons/icon-144x144.png" alt={siteMetadata.title} />
