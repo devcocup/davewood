@@ -17,7 +17,6 @@ export default ({ data }) => {
         <meta charSet="utf-8" />
         <title>{siteMetadata.title}</title>
         <meta name="description" content={siteMetadata.description} />
-        <link rel="canonical" href={siteMetadata.siteURL} />
       </Helmet>
       <Navbar />
 
@@ -27,7 +26,7 @@ export default ({ data }) => {
         {JPG.map(({ node }, index) => (
           <div id={index} key={node.id} className="row btn-group-sm my-1 justify-content-center">
             <p className="col">{node.name}</p>
-            <a className="btn btn-link mx-2" href={node.childImageSharp.fluid.srcWebp} alt="">WebPack Src</a>
+            <p>{node.childImageSharp.fluid.srcWebp}</p>
           </div>
         ))}
       </div>

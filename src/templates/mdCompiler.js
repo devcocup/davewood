@@ -13,8 +13,8 @@ export default ({ data }) => {
       <Navbar />
       <PageLinks />
 
-      <section id="Page" className="container bg-light">
-        <section id="main"
+      <section id="Page" className="row mx-5 bg-light">
+        <section className="container"
           dangerouslySetInnerHTML={{ __html: post.html }} />
       </section>
       <Footer />

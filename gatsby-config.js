@@ -52,17 +52,22 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
+        resolve: `gatsby-remark-images`,
+        options: {
+          maxWidth: 200,
+          linkImagesToOriginal: true,
+          wrapperStyle: "margin-bottom:10px",
+        },
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `img`,
-        path: `${__dirname}/src/pages/img/`,
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+        ignore: [`**/\.*`]
       },
     },
     {
@@ -75,7 +80,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
-        path: `${__dirname}/src/pages/`,
+        path: `${__dirname}/src/pages/md/`,
       },
     },
     {

@@ -18,25 +18,21 @@ export default ({ data }) => {
           <h3 id="Page-Subtitle">Note: Sizes are in W <b>|</b> H format</h3>
         </section>
 
-        <section className="col-10">
+        <section className="container">
           <table id="image-index" className="table table-bordered table-hover table-secondary">
 
             <thead>
-              <th className="bg-danger text-white">https://daveswoodworking.netlify.com/</th>
-              <th className="bg-danger text-white">Fluid Src</th>
-              <th className="bg-danger text-white">Presentation Size</th>
-              <th className="bg-danger text-white">Original Size</th>
-              <th className="bg-danger text-white">Fixed Size</th>
+              <tr>
+                <th className="col-4 bg-danger text-white">Sizes</th>
+                <th className="col-6 bg-danger text-white">Options</th>
+              </tr>
             </thead>
 
             <tbody>
               {data.allImageSharp.edges.map(({ node }, index) => (
-                <tr key={node.id}>
-                  <td> <b>{node.original.src}</b> </td>
-                  <td> <b>{node.fluid.src}</b> </td>
-                  <td> {node.fluid.presentationWidth} px <b>|</b> {node.fluid.presentationHeight} px </td>
-                  <td> {node.original.width} px <b>|</b> {node.original.height} px </td>
-                  <td> {node.fixed.width} px <b>|</b> {node.fixed.height} px </td>
+                <tr key={node.id} id={index}>
+                  <td>{node.fluid.sizes}</td>
+                  <td>{node.fluid.srcSet}</td>
                 </tr>
               ))}
             </tbody>
@@ -55,27 +51,18 @@ export default ({ data }) => {
 
 export const query = graphql`
   query MyFilesQuery {
-    allImageSharp {
-      edges {
-        node {
-          id
-          original {
-            src
-            width
-            height
-          }
-          fluid {
-            src
-            presentationWidth
-            presentationHeight
-          }
-          fixed {
-            src
-            width
-            height
-          }
+  allImageSharp{
+    totalCount
+    edges{
+      node{
+        id
+        fluid{
+          originalName
+          sizes
+          srcSet
         }
       }
     }
   }
+}
 `;

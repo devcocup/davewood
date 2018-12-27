@@ -7,26 +7,24 @@
   font-weight: 600;
   font-size: larger;
   text-align: center;
-  background: url('/static/woodgrain-1b892e5674474a039215f8af3b27cc89.png');
+  background: url('/static/1b892e5674474a039215f8af3b27cc89/fa9aa/woodgrain.png');
   background-attachment: fixed;
 }
 
 #site-nav {
   border: 1px solid #000;
   background-color: #8a8888;
+  display: flex;
 }
 
 #Page {
   box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
   border: 1px solid #000;
   text-align: center;
-  display: inherit;
+  padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-#main {
-  display: block;
+  display: inline-block;
 }
 
 #icons img {
@@ -39,7 +37,7 @@
 }
 
 #brand {
-max-height: 25vh;
+  max-height: 100%;
 }
 
 h3 {
@@ -50,15 +48,11 @@ h3 {
 img {
   box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
   margin-bottom: 1rem;
-  max-width: 75vw;
+  max-width: 100%;
 }
 
 table {
   font-size: 12px;
-}
-
-#IntroImg {
-  max-width: 25vw;
 }
 
 .card {

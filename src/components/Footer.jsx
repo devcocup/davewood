@@ -17,10 +17,10 @@ class Footer extends React.Component {
               <a className="nav-link" href="/">
                 <img src="https://img.icons8.com/metro/36/e7e6e6/home.png" width="36px" className="img-fluid text-light" alt="home" />
               </a>
-              <a className="nav-link" href={siteMetadata.socialMedia.facebook}>
+              <a className="nav-link" href={siteMetadata.socialMedia.facebook.url}>
                 <img src="https://img.icons8.com/metro/50/e7e6e6/facebook.png" width="36px" className="mx-1" alt="facebook" />
               </a>
-              <a className="nav-link" href={siteMetadata.socialMedia.instagram}>
+              <a className="nav-link" href={siteMetadata.socialMedia.instagram.url}>
                 <img src="https://img.icons8.com/metro/50/e7e6e6/instagram.png" width="36px" className="mx-1" alt="instagram" />
               </a>
             </div>

@@ -16,7 +16,6 @@ export default ({ data }) => {
         <meta charSet="utf-8" />
         <title>{siteMetadata.title}</title>
         <meta name="description" content={siteMetadata.description} />
-        <link rel="canonical" href={siteMetadata.siteURL} />
       </Helmet>
       <Navbar />
 
@@ -24,7 +23,7 @@ export default ({ data }) => {
 
       <section id="Page" className="container bg-light">
 
-        <table id="MarkdownRemark" className="table table-sm table-responsive table-hover">
+        <table id="MarkdownRemark" className="table table-sm table-bordered table-hover">
           <thead className="bg-danger text-white">
             <th>ID</th>
             <th>Name</th>
