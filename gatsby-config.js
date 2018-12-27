@@ -13,13 +13,21 @@ const siteMetadata = {
     twitter: "https://twitter.com/patp0w/"
   },
   socialMedia: {
+    home: {
+      url: "/",
+      logo: "https://img.icons8.com/metro/32/ffffff/home.png"
+    },
     facebook: {
       url: "https://www.facebook.com/Daves-Woodworking-1577530669229362/",
-      logo: "https://img.icons8.com/metro/50/e7e6e6/facebook.png"
+      logo: "https://img.icons8.com/metro/40/ffffff/facebook.png"
     },
     instagram: {
       url: "https://www.instagram.com/dtmiles1591/",
-      logo: "https://img.icons8.com/metro/50/e7e6e6/instagram.png"
+      logo: "https://img.icons8.com/metro/40/ffffff/instagram-new.png"
+    },
+    shop: {
+      url: "/md/",
+      logo: "https://img.icons8.com/metro/32/ffffff/shop.png"
     },
   }
 };

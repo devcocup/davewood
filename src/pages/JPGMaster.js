@@ -24,8 +24,8 @@ export default ({ data }) => {
 
       <div id="Page" className="container bg-light">
         {JPG.map(({ node }, index) => (
-          <div id={index} key={node.id} className="row btn-group-sm my-1 justify-content-center">
-            <p className="col">{node.name}</p>
+          <div id={index} key={node.id} className="row justify-content-center">
+            <img className="img-fluid" src={node.childImageSharp.fluid.srcWebp} alt={node.name} />
             <p>{node.childImageSharp.fluid.srcWebp}</p>
           </div>
         ))}

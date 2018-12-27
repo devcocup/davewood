@@ -14,14 +14,17 @@ class Footer extends React.Component {
 
             <div id="icons" className="row justify-content-center">
 
-              <a className="nav-link" href="/">
-                <img src="https://img.icons8.com/metro/36/e7e6e6/home.png" width="36px" className="img-fluid text-light" alt="home" />
+              <a className="nav-link" href={siteMetadata.socialMedia.home.url}>
+                <img src={siteMetadata.socialMedia.home.logo} width="36px" className="img-fluid text-light" alt="home" />
               </a>
               <a className="nav-link" href={siteMetadata.socialMedia.facebook.url}>
-                <img src="https://img.icons8.com/metro/50/e7e6e6/facebook.png" width="36px" className="mx-1" alt="facebook" />
+                <img src={siteMetadata.socialMedia.facebook.logo} width="36px" className="mx-1" alt="facebook" />
               </a>
               <a className="nav-link" href={siteMetadata.socialMedia.instagram.url}>
-                <img src="https://img.icons8.com/metro/50/e7e6e6/instagram.png" width="36px" className="mx-1" alt="instagram" />
+                <img src={siteMetadata.socialMedia.instagram.logo} width="36px" className="mx-1" alt="instagram" />
+              </a>
+              <a className="nav-link" href={siteMetadata.socialMedia.shop.url}>
+                <img src={siteMetadata.socialMedia.shop.logo} width="36px" className="img-fluid text-light" alt="instagram" />
               </a>
             </div>
 

@@ -29,7 +29,7 @@
 
 #icons img {
   box-shadow: none;
-  display: inline-flex;
+  display: flex;
 }
 
 #mediaImg {
@@ -49,6 +49,7 @@ img {
   box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
   margin-bottom: 1rem;
   max-width: 100%;
+  max-height: 75vh;
 }
 
 table {
