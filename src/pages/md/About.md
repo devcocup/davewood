@@ -7,7 +7,7 @@ date: "2018-10-01"
 
 ### David is an electrician, woodworker and recently became my brother-in-law.
 
-<img src="/static/ProfilePic-47f10aebd6e5bd6ce894054e4069fe13.jpg" alt="" class="img-fluid">
+<img src="/static/47f10aebd6e5bd6ce894054e4069fe13/2eba8/ProfilePic.webp" alt="" class="img-responsive">
 
 >Here he is pictured with his wife, Alex, on their wedding day.<br/>
 
