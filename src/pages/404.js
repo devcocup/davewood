@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import PathTable from '../data/PathTable';
+import PageLinks from '../data/PageLinks';
 
 class PageNotFound extends React.Component {
   render() {
@@ -19,7 +19,7 @@ class PageNotFound extends React.Component {
           <section id="main" className="flex-row">
             <div className="justify-content-center">
               <p>Try one of these links instead:</p>
-              <PathTable />
+              <PageLinks />
             </div>
           </section>
 
