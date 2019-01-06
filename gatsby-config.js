@@ -1,7 +1,7 @@
 const path = require(`path`);
 
 const siteMetadata = {
-  siteUrl: "https://daveswoodworking.netlify.com",
+  siteUrl: "https://mileswoodwork.netlify.com",
   title: "Miles Woodwork",
   description: "A Website Showcasing David Miles' Woodworking Projects",
   homePage: "https://github.com/prp1277/DavesWoodwork#daves-woodworking",
@@ -43,8 +43,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "DavesWoodwork",
-        short_name: "DavesWoodwork",
+        name: "MilesWoodwork",
+        short_name: "MilesWoodwork",
         start_url: "/",
         background_color: "#E7E6E6",
         theme_color: "#DC3545",
