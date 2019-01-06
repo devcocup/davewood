@@ -23,8 +23,8 @@ class Footer extends React.Component {
               <a className="nav-link" href={siteMetadata.socialMedia.instagram.url}>
                 <img src={siteMetadata.socialMedia.instagram.logo} width="36px" className="mx-1" alt="instagram" />
               </a>
-              <a className="nav-link" href={siteMetadata.socialMedia.shop.url}>
-                <img src={siteMetadata.socialMedia.shop.logo} width="36px" className="img-fluid text-light" alt="instagram" />
+              <a className="nav-link" href={siteMetadata.socialMedia.contact.url}>
+                <img src={siteMetadata.socialMedia.contact.logo} width="36px" className="img-fluid text-light" alt="instagram" />
               </a>
             </div>
 

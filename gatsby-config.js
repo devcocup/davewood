@@ -15,19 +15,19 @@ const siteMetadata = {
   socialMedia: {
     home: {
       url: "/",
-      logo: "https://img.icons8.com/metro/32/ffffff/home.png"
+      logo: "https://img.icons8.com/color/40/ffffff/home.png"
     },
     facebook: {
       url: "https://www.facebook.com/Daves-Woodworking-1577530669229362/",
-      logo: "https://img.icons8.com/metro/40/ffffff/facebook.png"
+      logo: "https://img.icons8.com/color/40/ffffff/facebook.png"
     },
     instagram: {
       url: "https://www.instagram.com/dtmiles1591/",
-      logo: "https://img.icons8.com/metro/40/ffffff/instagram-new.png"
+      logo: "https://img.icons8.com/color/40/ffffff/instagram-new.png"
     },
-    shop: {
+    contact: {
       url: "/md/",
-      logo: "https://img.icons8.com/metro/32/ffffff/shop.png"
+      logo: "https://img.icons8.com/color/40/000000/email.png"
     },
   }
 };

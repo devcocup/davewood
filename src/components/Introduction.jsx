@@ -11,7 +11,7 @@ class Introduction extends React.Component {
           <h5>Follow the links above to see samples of David's work</h5>
         </section>
 
-        <section id="main" className="col flex-row">
+        <section id="Page" className="col flex-row">
           <div className="card bg-secondary">
             <div className="card-body">
               <h1 className="card-header text-white">Happy Holidays!</h1>
