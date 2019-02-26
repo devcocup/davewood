@@ -1,10 +1,3 @@
----
-author: "Patrick Powell"
-date: "2018-09-28"
----
-
-> [Facebook](https://www.facebook.com/Daves-Woodworking-1577530669229362/) | [Instagram](https://www.instagram.com/dtmiles1591/)
-
 # Dave's WoodWorking
 
 ## How to Add Pictures
@@ -21,4 +14,3 @@ date: "2018-09-28"
 3. Add content to the `<> Edit new file` section
 4. Add a message to the `Commit new file` section
 5. Click the green `commit new files` button
-# Pat-Facts
